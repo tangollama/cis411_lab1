@@ -65,4 +65,5 @@ In addiiton to building a new mobile application interface, the grant requires t
 What archictural pattern(s) will you employee to support each of these needs? Justify your answers.
 
 # Extra Credit
-Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab).
+1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab).
+2. Augment/improve the assignment. Suggest meaningful changes in the assignment and highlight those changes in the extra credit portion of your lab report.
