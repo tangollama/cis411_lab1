@@ -1,11 +1,18 @@
 # Lab Report Template for CIS411_Lab1
-Course: Messiah College CIS 411, Fall 2018<br/>
-Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)<br/>
-Name: YOUR NAME<br/>
-GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)<br/>
+Course: Messiah College CIS 411, Fall 2018
+Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
+Name: YOUR NAME
+GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
+(if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
+
 
 # Step 0: Reviewing Architectural Patterns
 See the [lecture / discussion](https://docs.google.com/presentation/d/1nUcy63FWPFYO3OJmERJpMjEtdaFtaIBbuUkpmNRVRas/edit#slide=id.g45345bd5ea_0_136) from CIS 411. You'll need to be familiar with the content from this lecture to complete this assignment.
+
+Note: you are free to work with classmates on this assignment. _Good architecture is born out of collaboration - not reclusive mad-scientist behavior._ However, if you work with colleagues:
+
+1. You must specifically note your collaborators by name at the top of your report.
+2. You may not completely copy each others work (diagrams and descriptions, even if your solutions are identical).
 
 # Step 1: MVC Architecture
 Review the proposals for the Serve Central project. Let's imagine that the project has been granted (relatively) unlimited resources if they can deliver a version 1 release in 120 days. As a result, the team decides to implement an MVC architecture for its version 1 release, delivering functionality through a [responsive web application](https://en.wikipedia.org/wiki/Responsive_web_design). 
