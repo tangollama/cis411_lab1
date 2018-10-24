@@ -40,12 +40,12 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
 
-| Model | View | Controller |
-|---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Model                               | View                                         | Controller                                                                                                |
+|-------------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| Adds volunteer to event             | "Sign up" button displayed at bottom of form | Receives volunteer information and notifies model to "add volunteer to event"                             |
+| Update user information             | "Update" button that user clicks             | Receive update from view and notifies model to "update user"                                              |
+| Display event on map                | Map with POI at location of events           | Active refresh to receive view information and notifies model to "update map view"                        |
+| Update user's volunteer hours wheel | Volunteer hours wheel with matching legend   | Background refresh to receive completed events information and notifies model to "update volunteer wheel" |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
