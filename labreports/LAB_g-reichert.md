@@ -1,10 +1,9 @@
 # Lab Report Template for CIS411_Lab1
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
-Name: YOUR NAME
-GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
-(if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
-
+Name: Garrett Reichert
+GitHub: g-reichert(https://github.com/g-reichert)
+(if appropriate) Collaborators: 
 
 # Step 0: Reviewing Architectural Patterns
 See the [lecture / discussion](https://docs.google.com/presentation/d/1nUcy63FWPFYO3OJmERJpMjEtdaFtaIBbuUkpmNRVRas/edit#slide=id.g45345bd5ea_0_136) from CIS 411. You'll need to be familiar with the content from this lecture to complete this assignment.
@@ -23,29 +22,29 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | Volunteer can sign up and create an account |
+| Description / Steps | Volunteer can click on "create an account" and enter an email and password to create an account that they can use. |
+| Primary Actor | Volunteer |
+| Preconditions | Volunteer does not have an account and has downloaded the app |
+| Postconditions | Volunteer has an accesable account, and is now on the map view |
 
 | Use Case #2 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | Volunteer can sign up for an event |
+| Description / Steps | While the volunteer is on the more info screen, there is a button for signing up. This button leads to a form that can be filled out, with a submit button |
+| Primary Actor | Volunteer |
+| Preconditions | The volunteer is on the more information screen. |
+| Postconditions | The volunteer's filled out information will be uploaded into the database and the organization will be notified of a new volunteer.  |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
 
 | Model | View | Controller |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Volunteer Class | Profile Page | Volunteer Profile Controller |
+| Organization Class | Organization Informtional Page | Organization Controller |
+| Event Class | Event information Page | Event Controller |
+| Database containing information | Map View |  |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
