@@ -60,7 +60,12 @@ After an initial release and a few months of operation, Serve Central encounters
 
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
+
+I would head towards a layered architectural pattern. This would probably allow for us to navigate to the layer we need depending on where we our gathering our information. Local churches could have a different presentation layer, while still accessing the same services layer. This would allow us to provide our services in multiple different locations and in different ways. It would allow third party services to access the database layer to retrieve information that they needed without jumping through unnesscary hoops.
+
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
+
+![alt text](https://drive.google.com/file/d/1k6fkm7VX84Ebrr0RC4EYSOGNY2rcKh-K/view?usp=sharing "Picture 2")
 
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
@@ -73,6 +78,10 @@ In addition to building a new mobile application interface, the grant requires t
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+
+I would move towards a Master-Slave architecture, and maybe try to use some of the influences of broker architecture to handle the amount of responses we would need to send out each second. The Master-Slave architecture should allow us to hand both number 2 and 3 efficiently. We should be able to have a database (or multiple) to hold the 50TB data, and then we can use the slaves to efficiently pass back that information to people who are navigating our datastores. If we can implement some sort of broker architecture as well, we should be able to take in all of the opportunities and passed the information back quickly, which should benefit 1 and 3. I am unsure how exactly this will be helpful in addressing number 4, but hopefully having a slave database that they can have access to and query when need be will help researches be able find patterns of volunteers. 
+The primary concern that I would want to research before comitting to this is that the Master-Slave architecture can hold the information and pass it out with out creating to much latency and making the time requirement in step 1 impossible. 
+
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
