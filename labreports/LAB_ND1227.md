@@ -23,19 +23,19 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | Complete registration for the mobile application |
+|Description / Steps | Sign-up will be completed by launching the application and clicking the sign-up button.  After this, the user inputs their information and completes the sign-up process by verifying their email.  To complete registration, the user logs into the application and inputs the rest of their information and clicks "update". |
+| Primary Actor | New user |
+| Preconditions | Application must be downloaded |
+| Postconditions | User will be admitted into the system and the system will have the user's information within a database. |
 
 | Use Case #2 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | User applies for an event |
+| Description / Steps | The selects the event that they would like to volunteer.  The user confirms their information and the event's information, and then the user clicks the sign-up button.  This initiates the backend to notify the event vendor of a new applicant and the user will receive a confirmation once they are successfully sign-up for the event.
+| Primary Actor | User / Backend |
+| Preconditions | User has an account.  Event is created. |
+| Postconditions | User is signed-up for event.  Event is updated with the number of volunteers. Event is added to user's event list. |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
