@@ -33,7 +33,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 |---|---|
 | Title | User applies for an event |
 | Description / Steps | The selects the event that they would like to volunteer.  The user confirms their information and the event's information, and then the user clicks the sign-up button.  This initiates the backend to notify the event vendor of a new applicant and the user will receive a confirmation once they are successfully sign-up for the event.
-| Primary Actor | User / Backend |
+| Primary Actor | Volunteer |
 | Preconditions | User has an account.  Event is created. |
 | Postconditions | User is signed-up for event.  Event is updated with the number of volunteers. Event is added to user's event list. |
 
