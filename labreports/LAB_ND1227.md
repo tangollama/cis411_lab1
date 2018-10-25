@@ -38,7 +38,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 | Postconditions | |
 
 
-2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
+2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project. 
 
 | Model                               | View                                         | Controller                                                                                                |
 |-------------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------------------------------|
