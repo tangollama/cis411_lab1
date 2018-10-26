@@ -23,19 +23,19 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | Select an Event |
+| Description / Steps | 1. User selects a pin on the interactive map screen 2. The event information screen displays relevant information about the event, and also contains a sign up button. |
+| Primary Actor | User |
+| Preconditions | User has an account and is on the map page, and can see pins for volunteer events. |
+| Postconditions | User sees an event information screen, with details about the event; user can see a sign-up button to volunteer for a specific event. |
 
 | Use Case #2 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | Make an Account |
+| Description / Steps | 1. User locates the 'create account' button 2. Pressing the button prompts the user to enter an email address and a password. 3. The user clicks submit to enter their information |
+| Primary Actor | User |
+| Preconditions | User does not have an account |
+| Postconditions | User has an account; account information stored in the database of user data; user has access to profile page; user can now see the map of nearby events; User also has access to the events page and can view upcoming events in a list format. |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
