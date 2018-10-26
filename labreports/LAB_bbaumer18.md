@@ -1,10 +1,8 @@
 # Lab Report Template for CIS411_Lab1
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
-Name: YOUR NAME
-GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
-(if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
-
+Name: Brandon Baumer
+GitHub: bbaumer18(https://github.com/bbaumer18)
 
 # Step 0: Reviewing Architectural Patterns
 See the [lecture / discussion](https://docs.google.com/presentation/d/1nUcy63FWPFYO3OJmERJpMjEtdaFtaIBbuUkpmNRVRas/edit#slide=id.g45345bd5ea_0_136) from CIS 411. You'll need to be familiar with the content from this lecture to complete this assignment.
@@ -59,6 +57,7 @@ After an initial release and a few months of operation, Serve Central encounters
 
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
+	The most appropriate patterns to support these objectives would be to utilize a mix of a layered architecture with some form of Broker to distribute information. Having the broker would best enable the broad distribution of data to clients in an efficient manner. Also, having the layered architecture would allow for different presentation layers to be created and connected to the same stack of other layers. One possible adverse consequence of using this architecture is that it adds more complexity through more requirements surrounding dependency management.
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
 
 # Step 3: Scaling an Architecture
