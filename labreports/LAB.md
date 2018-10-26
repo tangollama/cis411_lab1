@@ -23,10 +23,20 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
+| Title | Joining a charitable activity |
+| Description / Steps |The user wants to find and join a charitable event in his area
+Normal Course:
+1) The user opens the app and navigates to the "local events" screen
+2) the system serves a list of events currently in the database that match the location criteria that need members, each having the event name, hosting organization, time, and place
+3) the user selects an event by tapping.
+4) the system serves that event's page, with name, hosting organization, time, place, and a button for signup. It stores the response locally.
+5) upon signup, the system serves a "terms and agreements" page and the option to accept or reject terms and conditions. It stores the response locally
+6) upon acceptance of the terms and conditions, the system serves a page that collects the time the user would like to work. It stores the response locally
+7) upon entry of desired time, the system stores the response locally and serves a review page, where the user's commitment is summarized.
+8) upon acceptance of the commitment page, the system sends the entered data to the server along with the user's id and the event's id. The serverside system inserts the user's relationship to the event into the database.|
+| Primary Actor | user (member user, not organzation account) |
+| Preconditions | 1) The user must have the application installed
+2) The user must have a valid account and be logged in to that account|
 | Postconditions | |
 
 | Use Case #2 | |
@@ -40,7 +50,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
 
-| Model | View | Controller |
+| Model
 |---|---|---|
 |  |  |  |
 |  |  |  |
