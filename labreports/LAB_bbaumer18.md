@@ -57,7 +57,7 @@ After an initial release and a few months of operation, Serve Central encounters
 
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
-	The most appropriate patterns to support these objectives would be to utilize a mix of a layered architecture with some form of Broker to distribute information. Having the broker would best enable the broad distribution of data to clients in an efficient manner. Also, having the layered architecture would allow for different presentation layers to be created and connected to the same stack of other layers. One possible adverse consequence of using this architecture is that it adds more complexity through more requirements surrounding dependency management.
+	- The most appropriate patterns to support these objectives would be to utilize a mix of a layered architecture with some form of Broker to distribute information. Having the broker would best enable the broad distribution of data to clients in an efficient manner. Also, having the layered architecture would allow for different presentation layers to be created and connected to the same stack of other layers. One possible adverse consequence of using this architecture is that it adds more complexity through more requirements surrounding dependency management.
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
 
 # Step 3: Scaling an Architecture
@@ -71,6 +71,7 @@ In addition to building a new mobile application interface, the grant requires t
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+- With the huge increase in data storage, I believe that the most needed change would be to implement a master slave relationship over the database servers. The reason that I believe this is needed is because with that amount of information, the only way to efficiently sort through it, to get the required latency, and enable searching through that large amount of data is through enabling a master server to distribute the tasks to the chain of available servers. This process will reduce the latency and hopefully enable quick access to the massive quantity of data. The reason that this change is required is that without implementing some form of a more efficient avenue of data usage/manipulation, the latency for accessing a database with that much information would be well to high for the required standards. The consequence of implementing this master/slave architecture is that it can create some communication instability which could cause further issues. Overall though, it would be a necessary change to fit the requirements given.
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
