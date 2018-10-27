@@ -3,6 +3,8 @@ Course: Messiah College CIS 411, Fall 2018 Instructors: [Joel Worrall](https://
 
 **Lab1**
 
+**Step 1: MVC Architecture**
+
 | **Use Case #1**       |                                                                                                         |
 |---------------------|---------------------------------------------------------------------------------------------------------|
 | Title               | Find a service event                                                                                    |
@@ -11,10 +13,18 @@ Course: Messiah College CIS 411, Fall 2018 Instructors: [Joel Worrall](https://
 | Preconditions       | 1. The user is signed in. 2. The user’s location is registered to the system.                           |
 | Postconditions      | The system produces a list of available service events in the user’s vicinity                           |
 
+| **Use Case #2**       |                                                                                                         |
+|---------------------|---------------------------------------------------------------------------------------------------------|
+| Title               | More information on service events                                                                                   |
+| Description / Steps | The user taps on an event from the list to view more information on it. |
+| Primary Actor       | The user (volunteer)                                                                                    |
+| Preconditions       | 1. The system produced a list of the closest service events based on the user’s location                        |
+| Postconditions      | The user is presented with more information on the service event                        |
 
 
 
-**Step 1: MVC Architecture**
+
+
 
 
 **![](blob:https://euangoddard.github.io/1ee129e6-2b8e-4d2d-b2f7-04cc2d9b0e04)**
