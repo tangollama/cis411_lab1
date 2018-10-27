@@ -2,7 +2,7 @@
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
 Name: YOUR NAME
-GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
+GitHub: [YOUR_HANDLE](https://github.com/nik-sloop)
 (if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
 
 
