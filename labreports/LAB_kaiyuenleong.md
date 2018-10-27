@@ -1,7 +1,7 @@
-# Lab Report for CIS411_Lab1
-Course: Messiah College CIS 411, Fall 2018
-Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
-Name: Kai Yuen Leong
+# Lab Report for CIS411_Lab1\
+Course: Messiah College CIS 411, Fall 2018\  
+Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)\  
+Name: Kai Yuen Leong\
 GitHub: kaiyuenleong(https://github.com/kaiyuenleong)
 
 # Step 1: MVC Architecture
