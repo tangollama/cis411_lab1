@@ -60,8 +60,6 @@ In addition to building a new mobile application interface, the grant requires t
 3. Allowing authorized parties to issue queries that traverse the TB's of data stored in your datastore(s).
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
-What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+What architectural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
 
-# Extra Credit
-1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
-2. Augment/improve the assignment. Suggest meaningful changes in the assignment and highlight those changes in the extra credit portion of your lab report.
+Cloud Computing Architecture. It provides high bandwidth/low latency and masses of storage space for data. Architectural changes are needed to support the predicted surge in data while being able to keep latency low. 
