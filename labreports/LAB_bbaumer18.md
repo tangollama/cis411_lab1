@@ -22,29 +22,29 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | Volunteer can edit account information |
+| Description / Steps | Volunteer can go to their account page and click on "Edit" to change the information of their profile. |
+| Primary Actor | Volunteer |
+| Preconditions | Volunteer already has a profile/account |
+| Postconditions | Volunteer has new account information saved to their profile |
 
 | Use Case #2 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | Volunteer can look for nearby events |
+| Description / Steps | Volunteer can open the map module and view their location and any events that are located near them (with their dates and times displayed) on the map.  |
+| Primary Actor | Volunteer |
+| Preconditions | Volunteer must have an account, have their location saved with their account information, and be on the event search page of the application |
+| Postconditions | Volunteer will see a map screen with all nearby events displayed along with the date and time of each event |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
 
 | Model | View | Controller |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Volunteer Class | Account Information View | Volunteer Controller |
+| Event Class | Event View  | Event Controller |
+| Location Class | Map View | Map Location Controller |
+| Sponsor Class | Sponsor Acccount View | Sponsor Controller |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
