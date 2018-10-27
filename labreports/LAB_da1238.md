@@ -23,7 +23,12 @@ Course: Messiah College CIS 411, Fall 2018 Instructors: [Joel Worrall](https://
 
 
 
-
+| Model           | View           | Controller           |
+|-----------------|----------------|----------------------|
+| LoginModel      | LoginView      | LoginController      |
+| SignUpModel     | SignUpView     | SignUpController     |
+| EventsListModel | EventsListView | EventsListController |
+| EventsMapModel  | EventsMapView  | EventsMapController  |
 
 
 
