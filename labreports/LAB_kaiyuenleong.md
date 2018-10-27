@@ -1,10 +1,8 @@
-# Lab Report Template for CIS411_Lab1
+# Lab Report for CIS411_Lab1
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
-Name: YOUR NAME
-GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
-(if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
-
+Name: Kai Yuen Leong
+GitHub: kaiyuenleong(https://github.com/kaiyuenleong)
 
 # Step 0: Reviewing Architectural Patterns
 See the [lecture / discussion](https://docs.google.com/presentation/d/1nUcy63FWPFYO3OJmERJpMjEtdaFtaIBbuUkpmNRVRas/edit#slide=id.g45345bd5ea_0_136) from CIS 411. You'll need to be familiar with the content from this lecture to complete this assignment.
