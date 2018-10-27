@@ -26,7 +26,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 | Title | Find service opportunities |
 | Description / Steps | Load more information about that opportunity in any view |
 | Primary Actor | The user of the client application *tron legacy soundtrack plays* |
-| Preconditions | 1. Open the app<br>2. Map view loads automatically with service opportunities represented as pins. The user can choose a different view based on their preferences. (List or Map View) 3. Choose an opportunity from available options|
+| Preconditions | 1. Open the app<br>2. Map view loads automatically with service opportunities represented as pins. The user can choose a different view based on their preferences. (List or Map View) <br>3. Choose an opportunity from available options|
 | Postconditions | Tooltip/modal with more information about the service opportunity |
 
 | Use Case #2 | |
