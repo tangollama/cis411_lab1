@@ -53,6 +53,8 @@ _Note: You are free to use any diagraming tool and framework that you want as lo
 
 ![Use case #1](https://i.imgur.com/xu5Pa8n.png)
 
+![Signup Form MVC Structure](https://i.imgur.com/VFRirm7.png)
+
 # Step 2: Enhancing an Architecture
 After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recuitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
 
