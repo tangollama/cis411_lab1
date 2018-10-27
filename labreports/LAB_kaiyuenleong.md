@@ -13,19 +13,19 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title | |
+| Title | Sign up for a service opportunity/event |
 | Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Primary Actor | Volunteer |
+| Preconditions | Volunteer has logged in; list of events and respective details are up-to-date |
+| Postconditions | Volunteer is signed up for an event; event organizer is notified of volunteer signup |
 
 | Use Case #2 | |
 |---|---|
-| Title | |
+| Title | Sign up for a ServeCentral account |
 | Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Primary Actor | Prospective Volunteer |
+| Preconditions | Database of registered users are up-to-date |
+| Postconditions | Volunteer is registered in the ServeCentral platform |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
