@@ -48,7 +48,12 @@ After an initial release and a few months of operation, Serve Central encounters
 
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
+
+`I think adjusting to a microservice architecture would be beneficial to the project at this point. This would allow for things like apis and additional services to be taken from the project for third party sites, and still use those apis for the main service. However, this split of service levels could cause problems when separated, and it might be hard to distinguish what the api would need separate from what it wouldn't.`
+
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
+
+![Updated Chart](https://github.com/dv1187/cis411_lab1/blob/master/Second%20Diagram.png)
 
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
@@ -60,4 +65,4 @@ In addition to building a new mobile application interface, the grant requires t
 3. Allowing authorized parties to issue queries that traverse the TB's of data stored in your datastore(s).
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
-What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+What archictural pattern(s) will you employ to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
