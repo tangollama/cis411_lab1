@@ -36,7 +36,9 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 | Created/Organized Events | Map on Web Application | System pulls an organization's created events and displays the events on a map |
 | User's Public Volunteer History | User Dashboard | System pulls an aggregate of a user's volunteer history and displays it on the user's dashboard |
 
-3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
+3)
+ 
+![Step 1 Part 3 Diagram](https://github.com/kaiyuenleong/cis411_lab1/blob/master/labreports/step1_part3_diagram)
 
 # Step 2: Enhancing an Architecture
 After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recuitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
