@@ -48,7 +48,11 @@ After an initial release and a few months of operation, Serve Central encounters
 
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
-2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
+
+Microservices. Given the fairly distinguishable services required to make the platform work (e.g. registration service, user dashboard service), microservices can be used to easily create an API that can be plugged into third-party systems. However, one caveat is that there can be more points of failure through various services and can make it challenging to figure out what went wrong when something does go wrong. 
+
+2. ![Step 2 Part 2 Diagram](https://github.com/kaiyuenleong/cis411_lab1/raw/master/labreports/step2_part2_diagram.jpg)
+
 
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
