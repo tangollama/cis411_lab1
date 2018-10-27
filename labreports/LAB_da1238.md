@@ -28,7 +28,7 @@ Course: Messiah College CIS 411, Fall 2018 Instructors: [Joel Worrall](https://
 | EventsListModel | EventsListView | EventsListController |
 | EventsMapModel  | EventsMapView  | EventsMapController  |
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt text](https://github.com/da1238/cis411_lab1/blob/master/labreports/Untitled%20Diagram.png)
 
 
 
