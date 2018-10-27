@@ -59,6 +59,9 @@ After an initial release and a few months of operation, Serve Central encounters
 
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
+
+I think the most appropriate pattern architecturaly would be layered. This would make it so that there were a lot of different options going forward as far as events and the locations of those events. It would also make it easier for users to retrieve the information they need to retrieve with less frustration.
+
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
 
 # Step 3: Scaling an Architecture
@@ -72,6 +75,8 @@ In addition to building a new mobile application interface, the grant requires t
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+
+I would stick with a layered architecture and make it more layered. I do not think that a layered architecture will be limited when you can add more layers and still implement a database that would allow for researches to examine patterns of volunteer opportunities as a way of determining future grant investments. 0
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
