@@ -1,9 +1,9 @@
 # Lab Report Template for CIS411_Lab1
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
-Name: YOUR NAME
-GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
-(if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
+Name: Ben Underwood
+GitHub: [benunderw](https://github.com/benunderw)
+(if appropriate) Collaborators: Ben Underwood, Kira Fernandez, Sam Mahan
 
 
 # Step 0: Reviewing Architectural Patterns
@@ -23,19 +23,19 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | Find service opportunities |
+| Description / Steps | Load more information about that opportunity in any view |
+| Primary Actor | The user of the client application *tron legacy soundtrack plays* |
+| Preconditions | 1. Open the app<br>2. Map view loads automatically with service opportunities represented as pins. The user can choose a different view based on their preferences. (List or Map View) 3. Choose an opportunity from available options|
+| Postconditions | Tooltip/modal with more information about the service opportunity |
 
 | Use Case #2 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | Sign up for a service opportunity |
+| Description / Steps | User fills and submits signup form, the contents of which is saved in a databse |
+| Primary Actor | The user of the client application |
+| Preconditions | 1. Service opportunity information is loaded 2. User presses the signup link |
+| Postconditions | Form data is saved in a database |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
