@@ -3,6 +3,7 @@ Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
 Name: Brandon Baumer
 GitHub: bbaumer18(https://github.com/bbaumer18)
+Collaborators: Thomas Wood
 
 # Step 0: Reviewing Architectural Patterns
 See the [lecture / discussion](https://docs.google.com/presentation/d/1nUcy63FWPFYO3OJmERJpMjEtdaFtaIBbuUkpmNRVRas/edit#slide=id.g45345bd5ea_0_136) from CIS 411. You'll need to be familiar with the content from this lecture to complete this assignment.
