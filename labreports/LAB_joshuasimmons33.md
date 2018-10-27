@@ -3,7 +3,7 @@ Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
 Name: Joshua Simmons
 GitHub: joshuasimmons33](https://github.com/joshuasimmons33)
-(if appropriate) Collaborators: []
+(if appropriate) Collaborators: [Nik Sloop]
 
 
 # Step 0: Reviewing Architectural Patterns
@@ -42,10 +42,10 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Model | View | Controller |
 |---|---|---|
-| Registered Volunteer Data | Current Volunteers Page | Registered Volunteer Controller |
-| Event Data | Event Information Page | Event Controller |
-| Organization Data | Organization Page | Organization Controller |
-| User Data | Profile Page | Profile Controller |
+| Registered Volunteer class | Current Volunteers Page | Registered Volunteer Controller |
+| Event class | Event Information Page | Event Controller |
+| Organization class | Organization Page | Organization Controller |
+| User class | Profile Page | Profile Controller |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
@@ -61,9 +61,10 @@ After an initial release and a few months of operation, Serve Central encounters
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilities of your chosen architecture(s) **as well as at least one potential issue / adverse consequence** of your choice.
 
-
+I think the layered model is the best option, since it allows other businesses to access certain layers of the ServeCentral data. For example, if a website only wanted to access the data that ServeCentral had on upcoming events, they could bypass the business and presentation layers and go right to the database layer through an API that is developed specifically for that purpose. Also, since it will be used by several different organizations, then the ability to use different technology choices is important. This however would prevent continuous deployment of updates, as things built with the outdated APIs would no longer function properly; you would need scheduled and announced updates to prevent this.
 
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
+![alt text](https://github.com/joshuasimmons33/cis411_lab1/blob/master/labreports/LayeredArch.jpg "New Architecture")
 
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization.
@@ -76,6 +77,8 @@ In addition to building a new mobile application interface, the grant requires t
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
 What architectural pattern(s) will you employ to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+
+I think the best solution to these problems would be the blackboard architecture, primarily because of its ability to handle large amounts of multi-faceted data, which this problem calls for. Also, the broker functionality would allow for fast queries of the data, as opposed to a single layer that would slow down this process. For issue 4, the blackboard architecture is supportive of both raw and calculated data, meaning that analysis could be done on the data that is retrieved through the system. This would have to be changed from the layer architecture, since the large data needs would make the database layer more imbalanced, and the large increase in use and stress on the system might prove too much for it to handle; therefore, you'd need an architecture that is able to support a large amount of use.  
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
