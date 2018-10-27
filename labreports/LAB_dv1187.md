@@ -1,18 +1,7 @@
-# Lab Report Template for CIS411_Lab1
+# Donovan Varney Lab #1 Report
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
-Name: YOUR NAME
-GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
-(if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
-
-
-# Step 0: Reviewing Architectural Patterns
-See the [lecture / discussion](https://docs.google.com/presentation/d/1nUcy63FWPFYO3OJmERJpMjEtdaFtaIBbuUkpmNRVRas/edit#slide=id.g45345bd5ea_0_136) from CIS 411. You'll need to be familiar with the content from this lecture to complete this assignment.
-
-Note: you are free to work with classmates on this assignment. _Good architecture is born out of collaboration - not reclusive mad-scientist behavior._ However, if you work with colleagues:
-
-1. You must specifically note your collaborators by name at the top of your report.
-2. You may not completely copy each others work (diagrams and descriptions, even if your solutions are identical).
+Name & GitHub: [Donovan Varney](https://github.com/dv1187)
 
 # Step 1: MVC Architecture
 Review the proposals for the Serve Central project. Let's imagine that the project has been granted (relatively) unlimited resources if they can deliver a version 1 release in 120 days. As a result, the team decides to implement an MVC architecture for its version 1 release, delivering functionality through a [responsive web application](https://en.wikipedia.org/wiki/Responsive_web_design). 
@@ -23,33 +12,35 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title: View Events in the Area | |
+| Description / Steps: A user has decided that they want to volunteer in an event, so they will look for events being hosted in their area with an intent to volunteer at one of them. | |
+| Primary Actor: Users | |
+| Preconditions: The user has signed into a verified account, and there are searchable events in the database. | |
+| Postconditions: The user can see a list of approved events that are available to have volunteers and can have the option to sign up for one or more of them. | |
 
 | Use Case #2 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title: Add a new Event | |
+| Description / Steps: A non-profit or business has decided that they need volunteers for an upcoming event, so they will add an event to ServeCentral with the intent of reaching out to potential volunteers. | |
+| Primary Actor: Event Coordinators | |
+| Preconditions: The event coordinator needs to have an account approved for creating volunteer events. | |
+| Postconditions: An event is created and added to a database that users that are volunteers can see the event when they search for one. | |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
 
 | Model | View | Controller |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| User login information (username, hashed password) | login page, login button | call login function, verify login |
+| Event information (location, time, date) | event information page, signup button, contact button | signup function, contact event coordinator function |
+| Change password (username, old password, new password, email address) | change password page, change password confirm button, cancel button | verify old password function, update database function |
+| Create event information (location, company, time, date, number of volunteers needed) | add event form, confirm button, cancel button, edit button | create event function |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
 _Note: You are free to use any diagraming tool and framework that you want as long as it clearly communicates the concept. I typically use a UML System Use Case or [UML Sequence Diagram](https://www.uml-diagrams.org/index-examples.html).  If you do not have a preferred diagramming tool: [draw.io](http://draw.io) or [lucidchart](http://lucidchart.com) are good cloud-based options._
+
+[View Chart Here]()
 
 # Step 2: Enhancing an Architecture
 After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recuitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
@@ -72,7 +63,3 @@ In addition to building a new mobile application interface, the grant requires t
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
-
-# Extra Credit
-1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
-2. Augment/improve the assignment. Suggest meaningful changes in the assignment and highlight those changes in the extra credit portion of your lab report.
