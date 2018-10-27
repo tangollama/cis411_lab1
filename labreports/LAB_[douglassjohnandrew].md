@@ -66,5 +66,8 @@ Organizations need to consider different architectures as organizations grow and
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
-2. Augment/improve the assignment. Suggest meaningful changes in the assignment and highlight those changes in the extra credit portion of your lab report.
+2. Augment/improve the assignment. Suggest meaningful changes in the assignment and highlight those changes in the extra credit portion of your lab report.<br/><br/>
 
+Possible additions to the assignment:
+1. In Step 3, ServeCentral was experiencing growth, but it would be interesting to consider a new architecture for ServeCentral if ServeCentral were in decline. For instance, if ServeCentral was not profiting from some service they offered, and as a result ServeCentral decided to axe it, how would ServeCentral's architecture change?
+2. Suppose ServeCentral is bought out by a big volunteer organization, United Way for example. Given United Way's existing architecture, what changes would United Way need to make to include ServeCentral?
