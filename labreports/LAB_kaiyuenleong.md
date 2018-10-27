@@ -38,7 +38,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 3)
  
-![Step 1 Part 3 Diagram](https://github.com/kaiyuenleong/cis411_lab1/blob/master/labreports/step1_part3_diagram)
+![Step 1 Part 3 Diagram](https://github.com/kaiyuenleong/cis411_lab1/raw/master/labreports/step1_part3_diagram)
 
 # Step 2: Enhancing an Architecture
 After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recuitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
