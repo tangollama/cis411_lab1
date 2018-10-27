@@ -1,9 +1,7 @@
-
+##Lab1
 Course: Messiah College CIS 411, Fall 2018 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch) Name: David Abraham GitHub: [da1238](https://github.com/da1238) 
 
-**Lab1**
-
-**Step 1: MVC Architecture**
+##Step 1: MVC Architecture**
 
 | **Use Case #1**       |                                                                                                         |
 |---------------------|---------------------------------------------------------------------------------------------------------|
