@@ -47,7 +47,7 @@ After an initial release and a few months of operation, Serve Central encounters
 2. Building organization-specific interfaces on top of the Serve Central business and data logic. (For instance, allowing the registration services of Serve Central to be embedded in the website of local churches, [ah-la Stripe embedding](https://stripe.com/payments/elements).)
 
 To support these objectives:
-1. *Microservices. Given the fairly distinguishable services required to make the platform work (e.g. registration service, user dashboard service), microservices can be used to easily create an API that can be plugged into third-party systems. However, one caveat is that there can be more points of failure through various services and can make it challenging to figure out what went wrong when something does go wrong.* 
+1. _Microservices. Given the fairly distinguishable services required to make the platform work (e.g. registration service, user dashboard service), microservices can be used to easily create an API that can be plugged into third-party systems. However, one caveat is that there can be more points of failure through various services and can make it challenging to figure out what went wrong when something does go wrong._ 
 
 2. ![Step 2 Part 2 Diagram](https://github.com/kaiyuenleong/cis411_lab1/raw/master/labreports/step2_part2_diagram.jpg)
 
@@ -63,4 +63,4 @@ In addition to building a new mobile application interface, the grant requires t
 
 What architectural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
 
-*Cloud Computing Architecture. It provides high bandwidth/low latency and masses of storage space for data. Architectural changes are needed to support the predicted surge in data while being able to keep latency low.* 
+_Cloud Computing Architecture. It provides high bandwidth/low latency and masses of storage space for data. Architectural changes are needed to support the predicted surge in data while being able to keep latency low._
