@@ -48,7 +48,9 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 | Event Data | Map | Only display the event pins that meet the filter criteria. |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
-![Picture of MVC flow for updating volunteer data](https://docs.google.com/drawings/d/1iB_45rSZKa9haSIFiqkoVHi5McL7-2iqSVa-5_TOhMA/edit?usp=sharing)
+
+![Picture of MVC flow for updating volunteer data](https://docs.google.com/drawings/d/1iB_45rSZKa9haSIFiqkoVHi5McL7-2iqSVa-5_TOhMA/edit?usp=sharing "MVC Architecture")
+
 _Note: You are free to use any diagraming tool and framework that you want as long as it clearly communicates the concept. I typically use a UML System Use Case or [UML Sequence Diagram](https://www.uml-diagrams.org/index-examples.html).  If you do not have a preferred diagramming tool: [draw.io](http://draw.io) or [lucidchart](http://lucidchart.com) are good cloud-based options._
 
 # Step 2: Enhancing an Architecture
@@ -63,7 +65,7 @@ To support these objectives:
 *I recommend using a layered architecture. This allows us to have a service layer accessible by Thirdparties which can be used to meet the 2 additional requirements needed for Enhancing the architecture. One danger could be malicious data injections, however, their are security measures that can be taken to minimize this risk such as binding variables, and use of intermediary environments that new records go into before they put in production. An additional concern is that a layered architecture requires at more dependency management.*
 
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
-
+![Layered Architecture Diagram]()
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization.
 
@@ -75,6 +77,8 @@ In addition to building a new mobile application interface, the grant requires t
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
 What architectural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+
+
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
