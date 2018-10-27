@@ -36,7 +36,14 @@ After an initial release and a few months of operation, Serve Central encounters
 
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
+
+One possible architecture is the master-slave architecture. This architecture seems to match ServeCentral's situation quite well because ServeCentral would be the master and the four volunteer entities would be the slaves. The 4 main volunteer organizations in the U.S. do not tend to collaborate with one another, so they can use ServeCentral's volunteering services independently of one another. Namely, each of the 4 entities can input / retrieve data and build organization-specific interfaces at their own discretion.<br/>
+The difficulty with this architecture would be ensuring that one entity inputing data into ServeCentral would not interfere with the other 3 entities in any way. Furthermore, if two or more of the entities wanted to collaborate in any way, the master-slave architecture only allows limited / no shared state between slaves, so collaboration would be very difficult.
+
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
+
+The diagram can be found [here](https://docs.google.com/drawings/d/17dGeHN6OFnmD4pSWDZXkSco1dfAzhgnS2ZAtO6GfCw8/edit?usp=sharing)
+
 
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
