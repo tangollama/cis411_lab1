@@ -1,9 +1,9 @@
 # Lab Report Template for CIS411_Lab1
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
-Name: YOUR NAME
-GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
-(if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
+Name: Thomas Wood
+GitHub: [tw1255](https://github.com/tw1255)
+Collaborators: Brandon Baumer
 
 
 # Step 0: Reviewing Architectural Patterns
@@ -23,19 +23,19 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title |User can create a profile |
+| Description / Steps |A user can sign up for a profile by putting in their email and password that they will use to sign in to their profile. |
+| Primary Actor |User |
+| Preconditions |User does not already have a profile |
+| Postconditions |User has a profile that can be accessed |
 
 | Use Case #2 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title |User can search for nearby events |
+| Description / Steps |When the user is signed into their profile they have the option of searching for nearby events that they have the option to volunteer for. |
+| Primary Actor |User |
+| Preconditions |The user is signed into their account and on the main page |
+| Postconditions |The user will find different events based on the area they are searching and will have options to choose from. |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
