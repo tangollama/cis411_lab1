@@ -31,21 +31,21 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #2 | |
 |---|---|
-| Title | Sign up for a service opportunity |
+| Title               | Sign up for a service opportunity |
 | Description / Steps | User fills and submits signup form, the contents of which is saved in a databse |
-| Primary Actor | The user of the client application |
-| Preconditions | 1. Service opportunity information is loaded 2. User presses the signup link |
-| Postconditions | Form data is saved in a database |
+| Primary Actor       | The user of the client application |
+| Preconditions       | 1. Service opportunity information is loaded <br>2. User presses the signup link |
+| Postconditions      | Form data is saved in a database |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
 
 | Model | View | Controller |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Opportunity Data | Map View     | Form Controller |
+| User Data        | List View    | Map Controller  |
+| Analytics Data   | Profile View | Profile Controller |
+| Form Data        | Form View    | List Controller |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
@@ -72,7 +72,3 @@ In addition to building a new mobile application interface, the grant requires t
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
-
-# Extra Credit
-1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
-2. Augment/improve the assignment. Suggest meaningful changes in the assignment and highlight those changes in the extra credit portion of your lab report.
