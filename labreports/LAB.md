@@ -3,7 +3,7 @@ Course: Messiah College CIS 411, Fall 2018<br/>
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)<br/>
 Name: Andrew Douglass<br/>
 GitHub: [douglassjohnandrew](https://github.com/douglassjohnandrew)<br/>
-(if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
+Collaborators: None
 
 
 # Step 0: Reviewing Architectural Patterns
@@ -17,16 +17,16 @@ Note: you are free to work with classmates on this assignment. _Good architectur
 # Step 1: MVC Architecture
 Review the proposals for the Serve Central project. Let's imagine that the project has been granted (relatively) unlimited resources if they can deliver a version 1 release in 120 days. As a result, the team decides to implement an MVC architecture for its version 1 release, delivering functionality through a [responsive web application](https://en.wikipedia.org/wiki/Responsive_web_design). 
 
-Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtLpdM0yuskx66jTFJzd64nsjU/edit#slide=id.g439b9c6866_2_53) and [this](https://docs.google.com/presentation/d/1-VZfAFoBVr6ijNepKAtRA7JoAQsV2Jlbf2l1WPDMhI0/edit) presentation:
+Based on [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtLpdM0yuskx66jTFJzd64nsjU/edit#slide=id.g439b9c6866_2_53) and [this](https://docs.google.com/presentation/d/1-VZfAFoBVr6ijNepKAtRA7JoAQsV2Jlbf2l1WPDMhI0/edit) presentation:
 
 1) Document two use cases of your choosing:<br/>
-2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project:<br/><br/>
+2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project:<br/>
 
-Both the 2 use cases and the table are in this [spreadsheet](https://docs.google.com/spreadsheets/d/1wJGX0KvONKKr31ELXoccJqDb_Ce_XQcLfyW1UQiJGx4/edit?usp=sharing)
+Both the 2 use cases and the table are in this [spreadsheet](https://docs.google.com/spreadsheets/d/1wJGX0KvONKKr31ELXoccJqDb_Ce_XQcLfyW1UQiJGx4/edit?usp=sharing).<br/><br/>
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)<br/><br/>
 
-The diagram can be found [here](https://docs.google.com/drawings/d/1Nv9ZRuDwvTA9LeLYFbo0K0rlJPx-HFwy50KNTDmHeB0/edit?usp=sharing)
+The diagram can be found [here](https://docs.google.com/drawings/d/1Nv9ZRuDwvTA9LeLYFbo0K0rlJPx-HFwy50KNTDmHeB0/edit?usp=sharing).<br/>
 
 # Step 2: Enhancing an Architecture
 After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recuitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
