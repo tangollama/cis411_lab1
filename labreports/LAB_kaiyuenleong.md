@@ -31,10 +31,10 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Model | View | Controller |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Private User Data | User Profile Settings | System pulls a user's data from a database and displays it on his/her profile settings |
+| Nearby Events | Events Map | System pulls nearby events based on a user's location and displays the events in the form of pins on the map |
+| Created/Organized Events | Map on Web Application | System pulls an organization's created events and displays the events on a map |
+| User's Public Volunteer History | User Dashboard | System pulls an aggregate of a user's volunteer history and displays it on the user's dashboard |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
