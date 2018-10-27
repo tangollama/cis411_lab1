@@ -39,7 +39,7 @@ Course: Messiah College CIS 411, Fall 2018 Instructors: [Joel Worrall](https://
 **Rails Architecture**: This architecture will be suitable as it will allow for serve central to be able to query and receive date from its model/datastore. It also accounts for the already established models, views and controllers and third-party services involved in the processes. A downside would be efficiency due to the dataflow with this architecture which is necessary due the fact that data is going in and out of the datastore.
 
 ![](blob:https://euangoddard.github.io/f8f91dc6-f66f-40e8-b424-31215f95a366)
-![alt text](https://github.com/da1238/cis411_lab1/blob/master/labreports/Untitled%20Diagram.png)
+![alt text](https://github.com/da1238/cis411_lab1/blob/master/labreports/Untitled%20Diagram-2.png?raw=true)
 
 ## Step 3: Scaling an Architecture
 
@@ -47,15 +47,15 @@ Course: Messiah College CIS 411, Fall 2018 Instructors: [Joel Worrall](https://
 
 **Layer Architecture**: This architecture will be appropriate to the dynamic nature of the situation. Due to the data on the datastore rapidly changing, the layer architecture allows these updates to be implemented at an equal pace due to the datastore's position on the data flow.
 
-1.  Supporting a volunteer and event data store that will quickly exceed 50TB of data
+2.  Supporting a volunteer and event data store that will quickly exceed 50TB of data
 
 **Master-slave**: For quick implementation, this architecture allows for flexibility when it comes to an excess in storage capabilities.
 
-1.  Allowing authorized parties to issue queries that traverse the TB's of data stored in your datastore(s).
+3.  Allowing authorized parties to issue queries that traverse the TB's of data stored in your datastore(s).
 
 **Client-Server**: Because this architecture makes users aware of data authority, it'll be appropriate to implement in order query datastores that require certain permissions.
 
-1.  Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
+4.  Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
 **Peer-to-peer**: Decentralized control allows for multiple users of the program/application to access analytics.
 
