@@ -23,29 +23,29 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title |User can create a profile |
-| Description / Steps |A user can sign up for a profile by putting in their email and password that they will use to sign in to their profile. |
-| Primary Actor |User |
-| Preconditions |User does not already have a profile |
-| Postconditions |User has a profile that can be accessed |
+| Title | User can create a profile |
+| Description / Steps | A user can sign up for a profile by putting in their email and password that they will use to sign in to their profile. |
+| Primary Actor | User |
+| Preconditions | User does not already have a profile |
+| Postconditions | User has a profile that can be accessed |
 
 | Use Case #2 | |
 |---|---|
-| Title |User can search for nearby events |
-| Description / Steps |When the user is signed into their profile they have the option of searching for nearby events that they have the option to volunteer for. |
-| Primary Actor |User |
-| Preconditions |The user is signed into their account and on the main page |
-| Postconditions |The user will find different events based on the area they are searching and will have options to choose from. |
+| Title | User can search for nearby events |
+| Description / Steps | When the user is signed into their profile they have the option of searching for nearby events that they have the option to volunteer for. |
+| Primary Actor | User |
+| Preconditions | The user is signed into their account and on the main page |
+| Postconditions | The user will find different events based on the area they are searching and will have options to choose from. |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
 
 | Model | View | Controller |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| User Class  | Account Information Page | User Controller |
+| Event Class | Event Page | Event Controller |
+| Location Class | Map | Location Controller |
+| Sponsor Class | Sponsor View | Sponsor Controller |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
