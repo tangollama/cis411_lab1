@@ -14,7 +14,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 | Use Case #1 | |
 |---|---|
 | Title | Sign up for a service opportunity/event |
-| Description / Steps | |
+| Description / Steps | 1. The volunteer selects either the "map view" or "list view" of events <br/> 2. In "map view", the system highlights the closest events to the volunteer on a map <br/> 3. In "list view", the system shows a list of nearby service events, sorted by distance from the volunteer's location <br/> 4. The volunteer selects a pin (in map view) or a listed event (in list view) <br/> 5. The system shows details of the selected event <br/> 6. If the volunteer selects the "register for event" option, the system notifies the event organizer of the signup and sends basic volunteer information to the event organizer; if the volunteer exits from the currently shown event, return to step 3 <br/> 7. The system notifies the volunteer of a successful signup|
 | Primary Actor | Volunteer |
 | Preconditions | Volunteer is logged in; list of events and respective details are up-to-date |
 | Postconditions | Volunteer is signed up for an event; event organizer is notified of volunteer signup |
@@ -22,11 +22,10 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 | Use Case #2 | |
 |---|---|
 | Title | Sign up for a ServeCentral account |
-| Description / Steps | 1. The system prompts the user to enter an email address and a password <br/> 2. The system checks the database of registered users to ensure that the user-entered email is not already in the system; prompts the user to log in instead if email already exists <br/> 3. The system add the user's email and password to the registered users database <br/> 4. The system notifies the user of successbul signup |
+| Description / Steps | 1. The system prompts the user to enter an email address and a password <br/> 2. The system checks the database of registered users to ensure that the user-entered email is not already in the system; prompts the user to log in instead if email already exists <br/> 3. The system adds the user's email and password to the registered users database <br/> 4. The system notifies the user of successful signup |
 | Primary Actor | Unregistered User |
 | Preconditions | Database of registered users are up-to-date |
 | Postconditions | Volunteer is registered in the ServeCentral platform |
-
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
 
