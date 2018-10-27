@@ -1,9 +1,14 @@
 # Lab Report Template for CIS411_Lab1
+
 Course: Messiah College CIS 411, Fall 2018
+
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
+
 Name: Ben Underwood
+
 GitHub: [benunderw](https://github.com/benunderw)
-(if appropriate) Collaborators: Ben Underwood, Kira Fernandez, Sam Mahan
+
+Collaborators: Ben Underwood, Kira Fernandez, Sam Mahan
 
 
 # Step 0: Reviewing Architectural Patterns
