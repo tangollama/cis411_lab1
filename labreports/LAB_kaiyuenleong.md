@@ -16,14 +16,14 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 | Title | Sign up for a service opportunity/event |
 | Description / Steps | |
 | Primary Actor | Volunteer |
-| Preconditions | Volunteer has logged in; list of events and respective details are up-to-date |
+| Preconditions | Volunteer is logged in; list of events and respective details are up-to-date |
 | Postconditions | Volunteer is signed up for an event; event organizer is notified of volunteer signup |
 
 | Use Case #2 | |
 |---|---|
 | Title | Sign up for a ServeCentral account |
-| Description / Steps | |
-| Primary Actor | Prospective Volunteer |
+| Description / Steps | 1. The system prompts the user to enter an email address and a password  2. The system checks the database of registered users to ensure that the user-entered email is not already in the system |
+| Primary Actor | Unregistered User |
 | Preconditions | Database of registered users are up-to-date |
 | Postconditions | Volunteer is registered in the ServeCentral platform |
 
