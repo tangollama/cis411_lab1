@@ -22,7 +22,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 | Use Case #2 | |
 |---|---|
 | Title | Sign up for a ServeCentral account |
-| Description / Steps | 1. The system prompts the user to enter an email address and a password   2. The system checks the database of registered users to ensure that the user-entered email is not already in the system |
+| Description / Steps | 1. The system prompts the user to enter an email address and a password <br/> 2. The system checks the database of registered users to ensure that the user-entered email is not already in the system |
 | Primary Actor | Unregistered User |
 | Preconditions | Database of registered users are up-to-date |
 | Postconditions | Volunteer is registered in the ServeCentral platform |
