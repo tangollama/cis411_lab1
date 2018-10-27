@@ -1,6 +1,9 @@
+
+Course: Messiah College CIS 411, Fall 2018 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch) Name: David Abraham GitHub: [da1238](https://github.com/da1238) 
+
 **Lab1**
 
-| Use Case #1         |                                                                                                         |
+| **Use Case #1**       |                                                                                                         |
 |---------------------|---------------------------------------------------------------------------------------------------------|
 | Title               | Find a service event                                                                                    |
 | Description / Steps | The user opens the app and a map of the closest service events to his location are presented to him/her |
@@ -9,7 +12,7 @@
 | Postconditions      | The system produces a list of available service events in the user’s vicinity                           |
 
 
-Course: Messiah College CIS 411, Fall 2018 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch) Name: David Abraham GitHub: [da1238](https://github.com/da1238) 
+
 
 **Step 1: MVC Architecture**
 
