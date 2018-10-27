@@ -32,13 +32,13 @@ Course: Messiah College CIS 411, Fall 2018 Instructors: [Joel Worrall](https://
 
 **![](blob:https://euangoddard.github.io/1ee129e6-2b8e-4d2d-b2f7-04cc2d9b0e04)**
 
-**Step 2: Enhancing an Architecture**
+## Step 2: Enhancing an Architecture**
 
 **Rails Architecture**: This architecture will be suitable as it will allow for serve central to be able to query and receive date from its model/datastore. It also accounts for the already established models, views and controllers and third-party services involved in the processes. A downside would be efficiency due to the dataflow with this architecture which is necessary due the fact that data is going in and out of the datastore.
 
 ![](blob:https://euangoddard.github.io/f8f91dc6-f66f-40e8-b424-31215f95a366)
 
-**Step 3: Scaling an Architecture**
+## Step 3: Scaling an Architecture**
 
 1.  Consuming bursts of 10k+ new volunteer opportunities per hour with a latency of less than 15 seconds between submitting an opportunity and its availability in the registration service.
 
