@@ -1,9 +1,8 @@
 # Lab Report for CIS411_Lab1
-Course: Messiah College CIS 411, Fall 2018
-Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
-Name: Justin Kim
-GitHub: [TymeOfNight](https://github.com/TymeOfNight)
-(if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
+  Course: Messiah College CIS 411, Fall 2018
+  Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
+  Name: Justin Kim
+  GitHub: [TymeOfNight](https://github.com/TymeOfNight)
 
 # Step 1: MVC Architecture
 Review the proposals for the Serve Central project. Let's imagine that the project has been granted (relatively) unlimited resources if they can deliver a version 1 release in 120 days. As a result, the team decides to implement an MVC architecture for its version 1 release, delivering functionality through a [responsive web application](https://en.wikipedia.org/wiki/Responsive_web_design). 
