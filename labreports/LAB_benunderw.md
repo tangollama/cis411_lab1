@@ -8,7 +8,7 @@ Name: Ben Underwood
 
 GitHub: [benunderw](https://github.com/benunderw)
 
-Collaborators: Ben Underwood, Kira Fernandez, Sam Mahan
+Collaborators: Ben Underwood, Kira Fernández, Sam Mahan
 
 
 # Step 0: Reviewing Architectural Patterns
