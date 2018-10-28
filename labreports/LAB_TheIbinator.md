@@ -1,8 +1,8 @@
 # Lab Report Template for CIS411_Lab1
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
-Name: YOUR NAME
-GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
+Name: Ibi Braide
+GitHub: [TheIbinator](https://github.com/TheIbinator)
 (if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
 
 
@@ -23,29 +23,29 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | ```Volunteer activity registration``` |
+| Description / Steps | ```Volunteer is intrested in signing up for a volunteering opportunity. Volunteer opens up the app, logs into their account, select the opportunity, and sign up without hassle``` |
+| Primary Actor |```Volunteer``` |
+| Preconditions |```Volunteer will have an active and working account on ServeCentral.There are different postings for opportunities listed on ServeCentral ``` |
+| Postconditions |```Volunteer will receive updates on their volunteering opportunity. Organizations hosting the opportunities will be informed on the interest with the volunteer's information```  |
 
 | Use Case #2 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title |```Opportunity Post``` |
+| Description / Steps | ```Companies and Businesses post opportunites for volunteers to get out and volunteer. Businesses/Companies log onto ServeCentral ``` |
+| Primary Actor |```Companies/Businesses ``` |
+| Preconditions |```Businesses/Companies are registered with ServeCentral and have permission to set up volunteer opportunites. Event has completed information, including time and description of what is required and what the opportunity is about``` |
+| Postconditions |```List of events is updated to include new posted opportunity. If the organization is new, display organization as part of the Services``` |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
 
 | Model | View | Controller |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+|```volunteer Class``` |```Volunteer Account Information ``` | ```Volunteer Controller``` |
+|```Oppurtinity Class ``` | ```Opportunity Description``` |```Opportunity Controller```  |
+| ```Location Class ```| ```Map``` | ``` Location Controller``` |
+| ```Businesses/Companies Class``` |```Business/Organization View``` |```Business Controller```  |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
@@ -59,8 +59,12 @@ After an initial release and a few months of operation, Serve Central encounters
 
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
-2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
 
+The most appropriate architectural pattern in this situation is the layered pattern. Although this pattern does make it a little complexity with all the layering being independent. There will have to be a
+
+2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
+good sense of communication between all the layers. But the benefits of this architectural structture is that the third party system can be implemented independently without it affecting
+the overall structure too much.
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
 
@@ -72,6 +76,10 @@ In addition to building a new mobile application interface, the grant requires t
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+
+I beleive the best architectural pattern to employ in this situation would be to use a Master SLave Architecture. With all of these new changes there will be a major need for increased dedicated tasks to specific servers that are available. By having dedicated servers
+for specific tasks, this will reduce the latency due to the largely increasing data amounts. Without any changes made to the existing system, the database will be extremely lagged and have
+latency issues. PErformance will decrease severely, so dedicated tasks for servers will make it so the servers dont have to sort through all the information at once
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
