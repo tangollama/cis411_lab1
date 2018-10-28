@@ -1,9 +1,9 @@
 # Lab Report Template for CIS411_Lab1
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
-Name: YOUR NAME
-GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
-(if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
+Name: Tyler Collins
+GitHub: tc1240(https://github.com/tc1240)
+(if appropriate) Collaborators: none
 
 
 # Step 0: Reviewing Architectural Patterns
@@ -23,19 +23,28 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| User Registers for Event | |
+| A registered user wants to register for a volunteering event
+1. User selects desired event and clicks the register button
+2. the user is then prompted for any additional data required by the event planner
+3. the user data is then passed into the event's "attendies" section of the database
+4. the system then notifies the user via email that they are now registered for the event | |
+| Volunteer user | |
+| The user must have an account made with ServeCentral | |
+| The user must be either sent a confirmation email or be presented with an error message due to unforseen error before use case ends | |
 
 | Use Case #2 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Organization Creates Event | |
+| A registered organization wants to create an event for volunteers to register for
+1. An organization user clicks the create event button
+2. the "create event" screen comes up and the user fills out the required information and hits submit
+3. the data is then stored in the "events" section of the database
+4. the user is then given a confirmation via email 
+5. the map of the database is then, by transferrence, updated with the new event| |
+| Organization user | |
+| The user must have an account with ServeCentral| |
+| The user must be either sent a confirmation email or be presented with an error message due to unforseen error before use case ends | |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
