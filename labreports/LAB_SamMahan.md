@@ -182,7 +182,13 @@ What archictural pattern(s) will you employee to support each of these needs? Wh
   <li> I would implement a (bypassable) service layer above my business layer. Most likely, this would take the form of GraphQL. This would allow my organization and outsiders to quickly and efficiently grab large volumes of data from a diverse set of API's for analysis, while still preserving those API's themselves for use by lighter queries from the presentation layer if necessary.</li>
   <li> I would deploy my server side application using Kubernetes to balance the increased traffic. This would allow me to scale up my hardware easily to meet demand</li>
   <li> I would not do anything to the database itself. Since it is a firebase database, it is managed by google and I do not have direct access to it's hardware, the way queries are executed in it, or the number of instances it runs on. All the data we harvest will be data from our systems, so we do not need the capability to read unstructured or semi-structured data. I imagine that google can deal with my increased traffic without trouble.</li>
+  
 </ol>
+**Consequences**
+<ol>
+  <li> as a consequence of implementing all of these features, the website will grow more complicated and require more documentation to maintain. Also, it will not be as changeable, since its design encourages outside services to rely on it.</li>
+  </ol>
+  
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
@@ -190,5 +196,5 @@ What archictural pattern(s) will you employee to support each of these needs? Wh
 
 **Augumentation/Improvement**
 <ol>
-  <li>Diagrams. I liked that we had to make diagrams, but I was left feeling like I had made them incorrectly. In my Serv Central model, for example I made a diagram of what layered architecture would look like in the context of serv central's initial needs.</li>
+  <li>Diagrams. I liked that we had to make diagrams, but I was left feeling like I had made them incorrectly. I suppose I do not know the level of detail that I need since there seems to be a range from very general to very specific</li>
 </ol>
