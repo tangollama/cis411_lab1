@@ -61,6 +61,9 @@ After an initial release and a few months of operation, Serve Central encounters
 
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
+ 
+    Broker and Layer architectural patterns are appropriate because broker allows for dynamic CRUD operations that allows the system to grow on its own and make options on the fly.  Layer architectural pattern let's the system create multiple custom interfaces for each client, while lowering the need for management by the server. One issue for the broker architecture is that it will be very complex to initiate while the project is still small.  The Layer architecture will show adverse consequences because management will still have to oversee the project to confirm the layer work well together.
+
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
 
 # Step 3: Scaling an Architecture
@@ -74,6 +77,8 @@ In addition to building a new mobile application interface, the grant requires t
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+ 
+    Blackboard and broker archiectural patterns will be able to support the requirements of this enhanced project.  Blackboard will allow the project to process massive amounts of data/information while allowing multiple components to be used with low latency.  Broker allows the larger project to be handled through dynamic CRUD operations and create transparent service distribution to the various clients. The change from layer is due to the fact that management oversight is required to run the achitecture.  Although many options can be made per service layer, the size of the project requires more physical oversight versus blackboard.
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
