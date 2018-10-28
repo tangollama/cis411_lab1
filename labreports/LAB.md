@@ -2,8 +2,8 @@
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
 Name: YOUR NAME
-GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
-(if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
+GitHub: [SamMahan](https://github.com/SamMahan)
+Collaborators: [Ben Underwood, Kira Fernandez]
 
 
 # Step 0: Reviewing Architectural Patterns
@@ -42,11 +42,8 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
     <td> Normal Course </td>
     <td>
       <ol>
-        <li>The user opens the app and navigates to the "local events" screen</li>
-        <li>the system serves a list of events currently in the database that match the location criteria that need members, each having             the event name, hosting organization, time, and place</li>
-        <li>the user selects an event by tapping.</li>
-        <li>the system serves that event's page, with name, hosting organization, time, place, and a button for signup. It stores the               response locally.</li>
-        <li>upon signup, the system serves a "terms and agreements" page and the option to accept or reject terms and conditions. It                  stores the response locally.</li>
+        <liThe system serves a page showing the event's time, place, and host organization of the event. a "signup" button is shown as well</li>
+        <li>Upon signup, the system serves a "terms and agreements" page and the option to accept or reject terms and conditions. It                  stores the response locally.</li>
         <li>upon acceptance of the terms and conditions, the system serves a page that collects the time the user would like to work. It             stores the response locally.</li>
         <li>upon entry of desired time, the system stores the response locally and serves a review page, where the user's commitment is             summarized.</li>
         <li>upon acceptance of the commitment page, the system sends the entered data to the server along with the user's id and the                  event's id. The serverside system inserts the user's relationship to the event into the database.</li>
@@ -55,32 +52,83 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
   </tr>
   <tr>
     <td>Preconditions</td>
-    <td>user (member user, not organzation account)</td>
+    <td>
+      <ol>
+        <li>The user must be a "standard user" (as opposed to an "organization tool")</li>
+        <li>The user must have the application installed</li>
+        <li>The user must have a valid account and be logged in to that account</li>
+        <li> The user must have already selected that event from the search functionality. </li>
+      </ol>
+     </td>
   </tr>
   <tr>
     <td>Postconditions</td>
     <td>
-      <ol>
-        <li>The user must have the application installed</li>
-        <li>The user must have a valid account and be logged in to that account</li>
-      </ol>
+    <li>A relation between the user and the event is created in the database. </li>
+    <li>A notification is pushed to the user's phone via the app on the day of the event. </li>      
     </td>
   </tr>
 </table>
     
 
 
-#Include use case number 2
-
+<!-- case number 2-->
+<table>
+  <tr>
+    <th>User case #2</th>
+    <th> </th>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td>User Registration</td>
+  </tr>
+  <tr>
+    <td>Description</td>
+    <td>A new user wants to register (non-organization account)</td>
+  </tr>
+  <tr>
+    <td>Primary actor</td>
+    <td>non-organization user</td>
+  </tr>
+  <tr>
+    <td> Normal Course </td>
+    <td>
+      <ol>
+        <li>The system detects that a user has no session upon application startup and serves a login page with a button giving the                  option to "create a new account". User clicks the "create a new account" button. </li>
+        <li> The system serves a page with fields for first name, last name, residence, and email. The user fills out these fields and      `         presses "submit"</li>
+        <li> Upon submission, the system stores the new user in the database. </li>
+        <li> The system initializes a session on the user's phone </li>
+        <li> The system redirects the user to the user account page </li>
+        
+      </ol>
+    </td>
+  </tr>
+  <tr>
+    <td>Preconditions</td>
+    <td>
+      <ol>
+        <li>The user must be trying to log in as a "standard user" (as opposed to an "organization tool")</li>
+        <li>The user must have the application installed on a supported phone</li>
+        <li>The application must not be storing a user session</li>
+      </ol>
+     </td>
+  </tr>
+  <tr>
+    <td>Postconditions</td>
+    <td>
+      <li> the user is sent a confirmation email to to be set as a "confirmed" user</li>
+      
+    </td>
+  </tr>
+</table>
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
 
-| Model
-|---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Components   |         |       |              |          |
+|--------------|---------|-------|--------------|----------|
+| Views        | Login   | User  | Event        | Register |
+| Controllers  | GetUser | Login | Register     | GetEvent |
+| Model Tables | User    | Event | Organization | Location |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
@@ -94,6 +142,11 @@ After an initial release and a few months of operation, Serve Central encounters
 
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
+**Answer**
+  I would recommend the use of a layered architecture with three layers: presentation, business, and database. Since queries would be     made from within the Node.js business logic codebase, there would be no need for a persistence layer.
+  
+  The reason why this architecture is ideal is because the site can now handle a more diverse set of requests for its data. On top of     being required to serve content to be used by view pages, it also must accept requests from outside organizations looking to             contribute to their own internal dashboards and datasets. To serve this data properly, it must ensure that its business logic is         completely separate from the view layer.
+  
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
 
 # Step 3: Scaling an Architecture
@@ -107,6 +160,12 @@ In addition to building a new mobile application interface, the grant requires t
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+
+<ol>
+  <li> I would implement a (bypassable) service layer above my business layer. Most likely, this would take the form of GraphQL. This would allow my organization and outsiders to quickly and efficiently grab large volumes of data from a diverse set of API's for analysis, while still preserving those API's themselves for use by lighter queries from the presentation layer if necessary.</li>
+  <li> I would deploy my server side application using Kubernetes to balance the increased traffic. This would allow me to scale up my hardware easily to meet demand</li>
+  <li> I would not do anything to the database itself. Since it is a firebase database, it is managed by google and I do not have direct access to it's hardware, the way queries are executed in it, or the number of instances it runs on. I imagine that google can deal with my increased traffic without trouble.</li>
+</ol>
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
