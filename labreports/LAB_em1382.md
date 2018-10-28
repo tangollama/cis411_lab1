@@ -1,9 +1,8 @@
 # Lab Report Template for CIS411_Lab1
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
-Name: YOUR NAME
-GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
-(if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
+Name: Ellis Madagan
+GitHub: [em1382](https://github.com/em1382)
 
 
 # Step 0: Reviewing Architectural Patterns
@@ -23,11 +22,11 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | New Service Event |
+| Description / Steps | A registered user creates a new service event, giving it a name, location, and description. The user then creates a form for their application using a built-in form designer, allowing them to dictate what goes on the form. Finally, they publish their service event to the public, or to a specific group of users. |
+| Primary Actor | A registered user. |
+| Preconditions | The user is registered as an event organizer. |
+| Postconditions | None |
 
 | Use Case #2 | |
 |---|---|
