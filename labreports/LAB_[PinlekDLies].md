@@ -23,33 +23,33 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | Sign-Up Volunteers | 
+| Description / Steps | Volunteers will need to sign up and register in order to pick where they will be attending an event  |
+| Primary Actor | Volunteers |
+| Preconditions | Must be over the age of 18 to sign up without a guardian |
+| Postconditions | They are able to sign up for future nearby events |
 
 | Use Case #2 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | Sign-Up Nonprofits |
+| Description / Steps | A nonprofit will need to sign up and register in order to pick their location where they are holding the event |
+| Primary Actor | Nonprofits |
+| Preconditions | Must show proper identifaction that the nonprofit is indeed a nonprofit and that the event is reputatable |
+| Postconditions | They are able to signup as a partner and create events|
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
 
-| Model | View | Controller |
+| Controllers | View | Model |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| PHP controller | Homepage | SQL |
+| PHP controller | Login page | Firebase |
+| PHP controller | Nonprofit page | SQL triggers |
+| PHP controller | Volunteer page | Verification Data |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
-_Note: You are free to use any diagraming tool and framework that you want as long as it clearly communicates the concept. I typically use a UML System Use Case or [UML Sequence Diagram](https://www.uml-diagrams.org/index-examples.html).  If you do not have a preferred diagramming tool: [draw.io](http://draw.io) or [lucidchart](http://lucidchart.com) are good cloud-based options._
+MVC architecture [diagram](https://docs.google.com/drawings/d/11Wo59Z-wWXkRb_QDlizBggvxVUMJD2DLJJPw_IyovKQ/edit?usp=sharing)
 
 # Step 2: Enhancing an Architecture
 After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recuitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
@@ -59,7 +59,13 @@ After an initial release and a few months of operation, Serve Central encounters
 
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
+
+Space-based architecture would probably be the most ideal, I did some research of my own. [Source](https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch05.html)  I believe that with the 4 of the primary volunteer enteties coming onboard, making sure the database is able to manage the cascading amount of data from these entities is very important. Scalabiliy is a huge factor especially moving into Step 3 and this allows for that. The biggest problem is the implmentation and development of this method and testing.  
+
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
+
+[Space-based architecture](https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/assets/sapr_0501.png)
+
 
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
@@ -71,7 +77,11 @@ In addition to building a new mobile application interface, the grant requires t
 3. Allowing authorized parties to issue queries that traverse the TB's of data stored in your datastore(s).
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
-What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+What archictural pattern(s) will you employ to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+
+I would use Space-based architecture again, as said in the webpage I listed earlier "The space-based pattern (also sometimes referred to as the cloud architecture pattern) minimizes the factors that limit application scaling. This pattern gets its name from the concept of tuple space, the idea of distributed shared memory. High scalability is achieved by removing the central database constraint and using replicated in-memory data grids instead. Application data is kept in-memory and replicated among all the active processing units. Processing units can be dynamically started up and shut down as user load increases and decreases, thereby addressing variable scalability. Because there is no central database, the database bottleneck is removed, providing near-infinite scalability within the application." One of the few problems is that it can be trouble to stress test the system. 
+
+If this architecture was utilized it would benefit the future of the company greatly. 
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
