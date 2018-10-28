@@ -30,11 +30,11 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #2 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | Signup for a Service Event |
+| Description / Steps | From one of the views in the application, the user finds an event and clicks on it. From there, they are given the option to register for the event. Upon clicking the register button, the user is able to fill out any additional information needed by the organizers of the event. |
+| Primary Actor | A registered user. |
+| Preconditions | The user is registered and approved to volunteer. |
+| Postconditions | None |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
