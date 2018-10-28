@@ -31,7 +31,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 | Use Case #2 | |
 |---|---|
 | Title | Coordinator Event Drafting|
-| Description / Steps | As an Event Coordinator, I must be able to draft an event in serve centeral so that I am completely able to create a preliminary version of the event before publishing it. |
+| Description / Steps | As an Event Coordinator, I must be able to draft an event in serve central so that I am completely able to create a preliminary version of the event before publishing it. |
 | Primary Actor | Event Coordinator |
 | Preconditions | Event Coordinator must have a verified account. Datastore must be capable of distinguishing between published and unpublished events.  |
 | Postconditions | Event Coordinator is able to publish an unpublished/drafted event. For marketing purposes, Event Coordinator must be provided a link that the Event Coordinator can use to direct people to their event |
@@ -56,7 +56,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 # Step 2: Enhancing an Architecture
 After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recruitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
 
-1. Thirdparty services to both input and retrieve data from the Serve Central model/datastore. (For instance, receiving volunteer opportunities from United Way chapters across the country.)
+1. Third-party services to both input and retrieve data from the Serve Central model/datastore. (For instance, receiving volunteer opportunities from United Way chapters across the country.)
 2. Building organization-specific interfaces on top of the Serve Central business and data logic. (For instance, allowing the registration services of Serve Central to be embedded in the website of local churches, [ah-la Stripe embedding](https://stripe.com/payments/elements).)
 
 To support these objectives:  
@@ -89,7 +89,26 @@ In addition to building a new mobile application interface, the grant requires t
 3. Allowing authorized parties to issue queries that traverse the TB's of data stored in your datastore(s).
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
-What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+What architectural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+
+## Architectural Pattern: Blackboard
+
+###Benefits: 
+90. Blackboard can handle massive amounts of data.
+180. Datastores can be independent of each other. 
+360. It is easy to add new knowledge source or update existing knowledge source. 
+540. All knowledge sources can work in parallel since they are very independent of each other.
+720. Blackboard is well suited for supporting or refuting hypothesis, as well as applying machine learning and making new discoveries about said data.
+
+###Potential Issue/s or Adverse Consequences.
+
+1. Blackboard was designed for ill-defined problems. As the problem space becomes understood, the necessity of blackboard diminishes.
+2. A micro-service architecture might be faster, but researchers would be at a disadvantage in coming to new insights about volunteers.
+
+## Why are changes needed?
+
+Changes are needed because the scale at which ServeCentral would be working at this stage would require some sort of change in architecture that could support the massive amount of bandwidth that the application would be receiving. If not blackboard, then a micro-service architecture would suffice. 
+
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
