@@ -69,6 +69,8 @@ To support these objectives:
 
 ![Layered Architecture Diagram](../jb1763_img/Layered_Drawing.png)
 
+Image from class slide used. Additionally, ServeCentral will design plug-ins that work similarly to their business logic that interact with their service layer that they will make accessible to other organizations.
+
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization.
 
