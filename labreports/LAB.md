@@ -64,8 +64,10 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
   <tr>
     <td>Postconditions</td>
     <td>
+      <ol>
     <li>A relation between the user and the event is created in the database. </li>
     <li>A notification is pushed to the user's phone via the app on the day of the event. </li>      
+      </ol>
     </td>
   </tr>
 </table>
@@ -116,8 +118,9 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
   <tr>
     <td>Postconditions</td>
     <td>
+      <ol>
       <li> the user is sent a confirmation email to to be set as a "confirmed" user</li>
-      
+      </ol>
     </td>
   </tr>
 </table>
@@ -132,22 +135,34 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
+
+[Architecture Diagram For Login](https://github.com/SamMahan/cis411_lab1/blob/master/Architecture-diagram.jpg)
+
+
 _Note: You are free to use any diagraming tool and framework that you want as long as it clearly communicates the concept. I typically use a UML System Use Case or [UML Sequence Diagram](https://www.uml-diagrams.org/index-examples.html).  If you do not have a preferred diagramming tool: [draw.io](http://draw.io) or [lucidchart](http://lucidchart.com) are good cloud-based options._
 
 # Step 2: Enhancing an Architecture
 After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recuitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
 
-1. Thirdparty services to both input and retrieve data from the Serve Central model/datastore. (For instance, receiving volunteer opportunities from United Way chapters across the country.)
+
+1. Third party services to both input and retrieve data from the Serve Central model/datastore. (For instance, receiving volunteer opportunities from United Way chapters across the country.)
 2. Building organization-specific interfaces on top of the Serve Central business and data logic. (For instance, allowing the registration services of Serve Central to be embedded in the website of local churches, [ah-la Stripe embedding](https://stripe.com/payments/elements).)
 
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
+
 **Answer**
   I would recommend the use of a layered architecture with three layers: presentation, business, and database. Since queries would be     made from within the Node.js business logic codebase, there would be no need for a persistence layer.
   
-  The reason why this architecture is ideal is because the site can now handle a more diverse set of requests for its data. On top of     being required to serve content to be used by view pages, it also must accept requests from outside organizations looking to             contribute to their own internal dashboards and datasets. To serve this data properly, it must ensure that its business logic is         completely separate from the view layer.
+  The reason why this architecture is ideal is because the site can now handle a more diverse set of requests for its data. On top of     being required to serve content to be used by view pages, it also must accept requests from outside organizations looking to             contribute to their own internal dashboards and datasets. To serve this data properly, it must ensure that its api's are only loosely   coupled to views, since they no longer serve only views.
+  
+  A setback of this is that the dependencies between all of the components of the website will have to be tracked, since the               functionality will no longer be considered single-use. This could cause confusion during updates, as changes could lead to failures in   services outside the organization that rely on the APIs.
+  
   
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
+
+**Answer**
+[Serv Central Model](https://github.com/SamMahan/cis411_lab1/blob/master/Serv-central-architecture.jpg)
 
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
@@ -161,12 +176,18 @@ In addition to building a new mobile application interface, the grant requires t
 
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
 
+**Answer**
 <ol>
   <li> I would implement a (bypassable) service layer above my business layer. Most likely, this would take the form of GraphQL. This would allow my organization and outsiders to quickly and efficiently grab large volumes of data from a diverse set of API's for analysis, while still preserving those API's themselves for use by lighter queries from the presentation layer if necessary.</li>
   <li> I would deploy my server side application using Kubernetes to balance the increased traffic. This would allow me to scale up my hardware easily to meet demand</li>
-  <li> I would not do anything to the database itself. Since it is a firebase database, it is managed by google and I do not have direct access to it's hardware, the way queries are executed in it, or the number of instances it runs on. I imagine that google can deal with my increased traffic without trouble.</li>
+  <li> I would not do anything to the database itself. Since it is a firebase database, it is managed by google and I do not have direct access to it's hardware, the way queries are executed in it, or the number of instances it runs on. All the data we harvest will be data from our systems, so we do not need the capability to read unstructured or semi-structured data. I imagine that google can deal with my increased traffic without trouble.</li>
 </ol>
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
 2. Augment/improve the assignment. Suggest meaningful changes in the assignment and highlight those changes in the extra credit portion of your lab report.
+
+**Augumentation/Improvement**
+<ol>
+  <li>Diagrams. I liked that we had to make diagrams, but I was left feeling like I had made them incorrectly. In my Serv Central model, for example I made a diagram of what layered architecture would look like in the context of serv central's initial needs.</li>
+</ol>
