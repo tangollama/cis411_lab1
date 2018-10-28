@@ -1,9 +1,8 @@
 # Lab Report Template for CIS411_Lab1
-Course: Messiah College CIS 411, Fall 2018
-Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
-Name: YOUR NAME
-GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
-(if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
+Course: Messiah College CIS 411, Fall 2018  
+Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)  
+Name: James Gelok  
+GitHub: [JamesGelok](https://github.com/JamesGelok)
 
 
 # Step 0: Reviewing Architectural Patterns
@@ -21,35 +20,38 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 1) Document two use cases of your choosing
 
-| Use Case #1 | |
-|---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Use Case #1        |                                                                                                                                                            |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Title              | User Event Registration                                                                                                                                    |
+| Description/ Steps | As a User, I need to be able to open the app and register for an event within the app.                                                                     |
+| Primary Actor      | User                                                                                                                                                       |
+| Preconditions      | User must have a verified (by email) account, datastore must be available and up to date, events must be viewable within the app                           |
+| Postconditions     | Send any event notifications to the user, notify event coordinator of registration, allow the event coordinator to mass communicate with user registrants. |
 
 | Use Case #2 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | Coordinator Event Drafting|
+| Description / Steps | As an Event Coordinator, I must be able to draft an event in serve centeral so that I am completely able to create a preliminary version of the event before publishing it. |
+| Primary Actor | Event Coordinator |
+| Preconditions | Event Coordinator must have a verified account. Datastore must be capable of distinguishing between published and unpublished events.  |
+| Postconditions | Event Coordinator is able to publish an unpublished/drafted event. For marketing purposes, Event Coordinator must be provided a link that the Event Coordinator can use to direct people to their event |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
 
-| Model | View | Controller |
-|---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Model              | View                                                   | Controller                                                   |
+|--------------------|--------------------------------------------------------|--------------------------------------------------------------|
+| ProfilePictureUrl  | Profile Picture                                        | Upload Image, send URL to Database                           |
+| RegistrationStatus | Register Now Button                                    | OnPress, UPDATE datastore on the registration status of User |
+| EventPictureUrl    | Application of image URL to respective display element | Upload Image, send URL to Database                           |
+| EventTitle         | Name of Event                                          | Input Box;                                                   |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
-_Note: You are free to use any diagraming tool and framework that you want as long as it clearly communicates the concept. I typically use a UML System Use Case or [UML Sequence Diagram](https://www.uml-diagrams.org/index-examples.html).  If you do not have a preferred diagramming tool: [draw.io](http://draw.io) or [lucidchart](http://lucidchart.com) are good cloud-based options._
+![Diagram](diagram_JamesGelok.png)
+![Diagram2](diagram2_JamesGelok.png)
+
+
 
 # Step 2: Enhancing an Architecture
 After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recuitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
