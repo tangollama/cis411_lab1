@@ -81,8 +81,17 @@ One appropriate architectural pattern could be using GraphQL to query required e
 In addition to building a new mobile application interface, the grant requires that the project prepare for the following future needs:
 
 1. Consuming bursts of 10k+ new volunteer opportunities per hour with a latency of less than 15 seconds between submitting an opportunity and it's availability in the registration service.
+
 2. Supporting a volunteer and event data store that will quickly exceed 50TB of data
+
 3. Allowing authorized parties to issue queries that traverse the TB's of data stored in your datastore(s).
+
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
-What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+What archictural pattern(s) will you employ to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+
+No changes are needed. We're perfect. -Kira Fernández
+
+Serious answer: (1), (2), and (3) can be addressed with a load balancing system using technologies such as Kubernetes and Docker. Benefits include distributing the increased traffic to ServeCentral to lessen the load per server (controller) and handle higher loads in general. Drawbacks include higher costs/maintenance. 
+
+(3) and (4) will require a customized controllers (using services like GraphQL) and views for the external users to easily interact with. 
