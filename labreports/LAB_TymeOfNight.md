@@ -75,4 +75,4 @@ What archictural pattern(s) will you employee to support each of these needs? Wh
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
 2. Augment/improve the assignment. Suggest meaningful changes in the assignment and highlight those changes in the extra credit portion of your lab report.
 
-[image1]: 
+[image1]: https://github.com/TymeOfNight/cis411_lab1/blob/master/images/image1.PNG
