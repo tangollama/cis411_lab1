@@ -79,6 +79,8 @@ In addition to building a new mobile application interface, the grant requires t
 
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
 
+I would employ a microservices pattern to solve this problem. As for the first issue, the bursts would be solved by simply adding more services to handle the traffic. As for problem number two, because it's so decoupled, it'd be easy to simply add more storage space. For problem number three, the microservices pattern can handle such a requirement, and finally, for issue number four, a layer with some sort of analytics software (integration with Kibana, etc.) could be added in order to solve the issue.
+
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
 2. Augment/improve the assignment. Suggest meaningful changes in the assignment and highlight those changes in the extra credit portion of your lab report.
