@@ -63,17 +63,18 @@ To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilities of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.  
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
 
-##1. Architectural Pattern: Layer Architecture
 
-###Benefits: 
+#1. Architectural Pattern: Layer Architecture
+
+### Benefits: 
 1. Insular architectural components allow more autonomous enhancement. *This is helpful as they scale and their teams grow larger.*
 2. Allows independent technology choices per layer. *This might make externalization of organization specific interfaces easier*
 
-###Potential Issue/s or Adverse Consequences.
+### Potential Issue/s or Adverse Consequences.
 
 1. Requires dependency mgmt. *This is a potential issue as dependency management can be a GIGANTIC pain. However, it doesn't necessarily have to be if you hire someone whose experienced and heed their warnings. ABT (always be testing)*
 
-##2. Diagram:
+## 2. Diagram:
 
 
 ![Diagram3](diagram3_JamesGelok.png)
@@ -93,14 +94,14 @@ What architectural pattern(s) will you employee to support each of these needs? 
 
 ## Architectural Pattern: Blackboard
 
-###Benefits: 
-90. Blackboard can handle massive amounts of data.
-180. Datastores can be independent of each other. 
-360. It is easy to add new knowledge source or update existing knowledge source. 
-540. All knowledge sources can work in parallel since they are very independent of each other.
-720. Blackboard is well suited for supporting or refuting hypothesis, as well as applying machine learning and making new discoveries about said data.
+### Benefits: 
+1. Blackboard can handle massive amounts of data.
+2. Datastores can be independent of each other. 
+3. It is easy to add new knowledge source or update existing knowledge source. 
+4. All knowledge sources can work in parallel since they are very independent of each other.
+5. Blackboard is well suited for supporting or refuting hypothesis, as well as applying machine learning and making new discoveries about said data.
 
-###Potential Issue/s or Adverse Consequences.
+### Potential Issue/s or Adverse Consequences.
 
 1. Blackboard was designed for ill-defined problems. As the problem space becomes understood, the necessity of blackboard diminishes.
 2. A micro-service architecture might be faster, but researchers would be at a disadvantage in coming to new insights about volunteers.
