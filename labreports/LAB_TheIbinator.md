@@ -65,6 +65,11 @@ The most appropriate architectural pattern in this situation is the layered patt
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
 good sense of communication between all the layers. But the benefits of this architectural structture is that the third party system can be implemented independently without it affecting
 the overall structure too much.
+
+![Layered architecture](Part2_diagram.jpg)
+
+
+
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
 
