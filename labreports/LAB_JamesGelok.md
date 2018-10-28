@@ -64,7 +64,7 @@ To support these objectives:
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
 
 
-#1. Architectural Pattern: Layer Architecture
+# 1. Architectural Pattern: Layer Architecture
 
 ### Benefits: 
 1. Insular architectural components allow more autonomous enhancement. *This is helpful as they scale and their teams grow larger.*
