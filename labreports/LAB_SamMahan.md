@@ -1,7 +1,7 @@
 # Lab Report Template for CIS411_Lab1
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
-Name: YOUR NAME
+Name: Samuel Mahan
 GitHub: [SamMahan](https://github.com/SamMahan)
 Collaborators: [Ben Underwood, Kira Fernandez]
 
@@ -65,7 +65,8 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
     <td>Postconditions</td>
     <td>
       <ol>
-    <li>A relation between the user and the event is created in the database. </li>
+    <li>Organization users can see the new user on their dashboard</li>
+    <li>If the threshold of helpers for that event has been reached, that event is marked "full" when searched</li>
     <li>A notification is pushed to the user's phone via the app on the day of the event. </li>      
       </ol>
     </td>
