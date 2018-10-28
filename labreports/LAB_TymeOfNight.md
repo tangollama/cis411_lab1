@@ -1,8 +1,8 @@
 # Lab Report Template for CIS411_Lab1
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
-Name: YOUR NAME
-GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
+Name: Justin Kim
+GitHub: [TymeOfNight](https://github.com/TymeOfNight)
 (if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
 
 
@@ -21,35 +21,33 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 1) Document two use cases of your choosing
 
-| Use Case #1 | |
+| Use Case #1 | User registers for an event |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | Event Sign-up |
+| Description / Steps | The user will select one of the listed events on the map screen they wish to attend.  The event description will notify them of any outstanding documentation they need to register in the app, or that they need to bring to the event site.  If all conditions are met, the user can complete their registration. |
+| Primary Actor | User |
+| Preconditions | User must have created an account. |
+| Postconditions | The application must report the successful registration to the hosting organization, and inform the user that their registration has been submitted. |
 
-| Use Case #2 | |
+| Use Case #2 | Organization Registers an Event |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | Event Creation |
+| Description / Steps | A client organization will create an event, specifying a location, description, maximum number of volunteers, and volunteer requirements. |
+| Primary Actor | Organization |
+| Preconditions | The organization must have subscribed to our service, and must have registered an Organization Account. |
+| Postconditions | None. |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
 
 | Model | View | Controller |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Map Model | Map View | Map Controller, Registration Controller |
+| User Model / Organization Model | Account View | User Update Controller / Organization Update Controller |
+| Calendar Model | Calendar View | Calendar Controller |
+| Event Model | Event Details View | Event Update Controller |
 
-3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
-
-_Note: You are free to use any diagraming tool and framework that you want as long as it clearly communicates the concept. I typically use a UML System Use Case or [UML Sequence Diagram](https://www.uml-diagrams.org/index-examples.html).  If you do not have a preferred diagramming tool: [draw.io](http://draw.io) or [lucidchart](http://lucidchart.com) are good cloud-based options._
+3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.) ![Event Registration Process][image1]
 
 # Step 2: Enhancing an Architecture
 After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recuitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
@@ -76,3 +74,5 @@ What archictural pattern(s) will you employee to support each of these needs? Wh
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
 2. Augment/improve the assignment. Suggest meaningful changes in the assignment and highlight those changes in the extra credit portion of your lab report.
+
+[image1]: 
