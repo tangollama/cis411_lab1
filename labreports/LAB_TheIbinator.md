@@ -60,13 +60,13 @@ After an initial release and a few months of operation, Serve Central encounters
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
 
-The most appropriate architectural pattern in this situation is the layered pattern. Although this pattern does make it a little complexity with all the layering being independent. There will have to be a
+The most appropriate architectural pattern in this situation I beleive is the layered pattern. Although this pattern does make it a little complex with all the layering being independent. There will have to be a dedicated manager to all the different layers, especially if the number of layers begins to grow. However , a layered architecture seems to be the most scalable and flexible in this sistuation.
 
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
 good sense of communication between all the layers. But the benefits of this architectural structture is that the third party system can be implemented independently without it affecting
 the overall structure too much.
 
-![Layered architecture](Part2_diagram.jpg)
+![Layered architecture](..labreports/Part2_diagram.jpg)
 
 
 
@@ -82,9 +82,8 @@ In addition to building a new mobile application interface, the grant requires t
 
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
 
-I beleive the best architectural pattern to employ in this situation would be to use a Master SLave Architecture. With all of these new changes there will be a major need for increased dedicated tasks to specific servers that are available. By having dedicated servers
-for specific tasks, this will reduce the latency due to the largely increasing data amounts. Without any changes made to the existing system, the database will be extremely lagged and have
-latency issues. PErformance will decrease severely, so dedicated tasks for servers will make it so the servers dont have to sort through all the information at once
+I beleive the best architectural pattern to employ in this situation would be to use a Master SLave Architecture. With all of these new changes, there will be a major need for increased dedicated tasks to specific servers that are available. By having dedicated servers
+for specific tasks, this will reduce the latency, due to the largely increasing data amounts. Without any changes made to the existing system, the database will be extremely lagged and have latency issues.Because performance will decrease severely, dedicated tasks for servers will make it so the servers dont have to sort through all the information at once.
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
