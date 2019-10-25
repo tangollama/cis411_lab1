@@ -49,6 +49,8 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
+![Use Case Diagram](https://github.com/hz1165/cis411_lab1/blob/master/assets/Use%20Case.png)
+
 _Note: You are free to use any diagraming tool and framework that you want as long as it clearly communicates the concept. I typically use a UML System Use Case or [UML Sequence Diagram](https://www.uml-diagrams.org/index-examples.html).  If you do not have a preferred diagramming tool: [draw.io](http://draw.io) or [lucidchart](http://lucidchart.com) are good cloud-based options._
 
 # Step 2: Enhancing an Architecture
@@ -59,7 +61,12 @@ After an initial release and a few months of operation, Serve Central encounters
 
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
+
+* I think the "GraphQL" architectural pattern would work well with Serve Central. Map controller, Event Updating controller and etc. can all retrieve data they need from different APIs (Google maps API, payment API...) and database all from the GraphQL API gateway, which makes the whole process easy to manage. One potential issue is since all the APIs and database have to go through the API gateway, if the gateway is offline, all the service may have to go offline as well
+
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
+
+   ![GraphQL Diagram](https://github.com/hz1165/cis411_lab1/blob/master/assets/GraphQL.png)
 
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
