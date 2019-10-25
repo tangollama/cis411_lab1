@@ -80,6 +80,9 @@ In addition to building a new mobile application interface, the grant requires t
 
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
 
+* The architectural pattern I am planning to employ is broker because decoupling huge traffic is exactly what Serve Central needs if it has so much users. We need mutiple servers and regional datastores which are geographically located in different locations so all the users can have the fastest response time. Also, multiple servers and datastores will be able to handle 50TB of data. We will also need a service to let authorized parties to traverse data from our datastore as well as letting researchers to pull up our data from our data store for researching purposes. 
+* The benefit of these changes is that Serve Central is now capable of handling a large traffic of data transfer and new registers, and it also has the abilities to expand into more places which grants more users.
+
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
 2. Augment/improve the assignment. Suggest meaningful changes in the assignment and highlight those changes in the extra credit portion of your lab report.
