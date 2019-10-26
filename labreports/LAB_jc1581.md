@@ -1,8 +1,8 @@
 # Lab Report Template for CIS411_Lab1
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
-Name: YOUR NAME
-GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
+Name: Josh Coldsmith
+GitHub: jc1581(https://github.com/jc1581)
 (if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
 
 
@@ -23,11 +23,11 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | Search for Service Opportunity |
+| Description / Steps | This use case describes a volunteer who searches for a service opportunity |
+| Primary Actor | Volunteer |
+| Preconditions | App is available and Opportunity Database is functioning |
+| Postconditions | The volunteer has recieved service opportunities based on search results |
 
 | Use Case #2 | |
 |---|---|
