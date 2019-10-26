@@ -61,8 +61,8 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 | User profile data            	| View events w/list 	| Select event       	|
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
-
-
+![alt text](https://github.com/tran1996/cis411_lab1/blob/master/labreports/UseCase.png "Searching Events by Location")
+![alt text](https://github.com/tran1996/cis411_lab1/blob/master/labreports/MVC.png "MVC")
 
 # Step 2: Enhancing an Architecture
 After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recuitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
@@ -73,6 +73,7 @@ After an initial release and a few months of operation, Serve Central encounters
 To support these objectives:
 1. Microservice is one architecture I would recommend to allow these requirements. Microservices has many benefits for agile development as it is very modular. It starts off as building an application that allows for small services and once it has developed, these services can be deployed independently of one another and recombine on all layers of the architecture. It is easy to integrate with automatic deployment and, in this case, once the application has been built, thirdparty services can input and retrieve their data without affecting one another. Even if a thirdparty company were to make a mistake somewhere in the coding and the microservice fails, it would not affect the others. This architecture style would also allow for building organization-specific interfaces, such as embedding Serve Central to be embedded on the website of local churches. This architecture is easy to scale and integrate with third-party services. Software built with microservices can be broken down into multiple component services so that they can each be deployed, tweaked and redeployed independently without comprising the integrity of the application result. This architecture is easy to scale and integrate with third-party services. However, there are cons to this style as well as, with the increasing number of services, managing and integrating this application can become complicated. Not only that, developers have to make more of an effort in communicating between services. 
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
+![alt text](https://github.com/tran1996/cis411_lab1/blob/master/labreports/Microservice.png "Microservice")
 
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
