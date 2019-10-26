@@ -28,10 +28,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 | Use Case #1 | |
 |---|---|
 | Title | Search for Service Opportunity |
-| Description / Steps | This use case describes a volunteer who searches for a service opportunity: <br>
-                        * Step 1:<br>
-                        * Step 2:<br>
-                        * Step 3:<br> |
+| Description / Steps | This use case describes a volunteer who searches for a service opportunity: <br> * Step 1:<br> * Step 2:<br> |
 | Primary Actor | Volunteer |
 | Preconditions | App is available and Opportunity Database is functioning |
 | Postconditions | The volunteer has recieved service opportunities based on search results |
