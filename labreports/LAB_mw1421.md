@@ -51,8 +51,8 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Model | View | Controller |
 |---|---|---|
-|  |  |  |
-|  |  |  |
+| Google Firebase | React Native | Express |
+| MongoDB | Swift | Driver |
 |  |  |  |
 |  |  |  |
 
