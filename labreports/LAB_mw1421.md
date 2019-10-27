@@ -1,8 +1,8 @@
 # Lab Report Template for CIS411_Lab1
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
-Name: YOUR NAME
-GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
+Name: Michael Williams
+GitHub: [Michael Williams](https://github.com/mw1421)
 (if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
 
 
@@ -23,11 +23,12 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | ServeCentral Organization Use Case |
+| Description / Steps | Organizations have a hard time finding volunteers for their various projects. This new platform gives a chance to help organizations keep all of their information in one place and be able to track and find volunteer help. The organization first sets up an event. The organization then waits for people to sign up for the event, promote the event on ServeCentral or other social media platforms, or invite specific people to the event. The event happens with the volunteers that signed up for the event. |
+| Primary Actor | Organization |
+| Preconditions | 
+There is a need for volunteer help. |
+| Postconditions | The event is complete. |
 
 | Use Case #2 | |
 |---|---|
