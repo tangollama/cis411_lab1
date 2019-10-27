@@ -25,20 +25,26 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 |---|---|
 | Title | ServeCentral Organization Use Case |
 | Description / Steps | Organizations have a hard time finding volunteers for their various projects. This new platform gives a chance to help organizations keep all of their information in one place and be able to track and find volunteer help. 
-| 1 | The organization first sets up an event. |
-| 2 | The organization then waits for people to sign up for the event, promote the event on ServeCentral or other social media platforms, or invite specific people to the event. |
-| 3 | The event happens with the volunteers that signed up for the event. |
+| 1 | The organization sets up an organization account. |
+| 2 | The organization first sets up an event. |
+| 3 | The organization then waits for people to sign up for the event, promote the event on ServeCentral or other social media platforms, or invite specific people to the event. |
+| 4 | The event happens with the volunteers that signed up for the event. |
 | Primary Actor | Organization |
 | Preconditions | There is a need for volunteer help. |
 | Postconditions | The event is complete. |
 
 | Use Case #2 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
+| Title | ServeCentral Volunteer Use Case |
+| Description / Steps | Volunteers find it hard to volunteer at different events, since it is all very unorganized. This platform will help both parties find the right people for the right events. |
+| 1 | Volunteers set up a volunteer account. |
+| 2 | Volunteers sign up for events. |
+| 3 | Volunteers complete events. |
+| Primary Actor | Volunteers |
 | Preconditions | |
-| Postconditions | |
+| 1 | There is a want to volunteer. |
+| 2 | There is a means of transportation to event. |
+| Postconditions | The event is complete. |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
