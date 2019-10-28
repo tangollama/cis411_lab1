@@ -92,6 +92,18 @@ In addition to building a new mobile application interface, the grant requires t
 
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
 
+I would choose the broker architecture. 
+With the broker architecture, it separates the components to interact with the services. It forwards the requests from the client to the server that needs to be contacted. It is very flexible, maintainable, and scalable. 
+With the 10k+ volunteer opportunities, the broker would receive the client's request and point it to the server that it would need, giving little latency. 
+It could also handle lots of data since it can contact different servers. So the huge amounts of data can be split into different servers. 
+The authorized parties can also traverse the different servers since the broker can just take a request and point them in the right direction. 
+There could be something implemented to track where the brokers point certain volunteers, which could also lead to better volunteer opportunities for the volunteer. 
+
+The benefits would be that it is very flexible. You can add and disconnect servers at will, so you can add many serveres to handle the many requests that would potentially come. 
+The negative points would be that the clients would need to know what they want. If they want to just browse around, it would be hard since you have to contact the broker first and it would take you to where you want to go. 
+
+The changes are necessary because with the layered architecture, it cannot handle the amount of requests sent in and would most likely crash the system. The layered architecture is made for smaller and fast developments. 
+
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
 2. Augment/improve the assignment. Suggest meaningful changes in the assignment and highlight those changes in the extra credit portion of your lab report.
