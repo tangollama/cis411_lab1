@@ -1,4 +1,4 @@
-# Lab Report Template for CIS411_Lab1
+# Lab Report for CIS411_Lab1
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
 Name: Michael Williams
