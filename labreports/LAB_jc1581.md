@@ -73,11 +73,10 @@ After an initial release and a few months of operation, Serve Central encounters
 
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilities of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice. <br>
-```
     Client-Server Architecture: I believe that this architectural pattern would help Serve Central by allowing Thirdparty services to have access to the main central datastore. Due to the advantage of the client-server architecture allowing for access to it by multiple clients, I believe this would prove helpful. One struggle with this architecture would be the centralized server. A common issue with this architecture is that it is risky having all your eggs in one basket. If your centralized server goes down, it could result in your entire website going down. <br>
     Peer-to-Peer Architecture: This architectural pattern would be helpful for having organization-specific interfaces since some of the processing is distributed to each of the peers. A potential problem with this architecture is that a lot of verification and security processing needs to take place as compared to a client-server architecture. This could slow things down. <br>
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
-```
+
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
 
