@@ -29,20 +29,25 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 |---|---|
 | Title | Search for Service Opportunity |
 | Description / Steps | This use case describes a volunteer who searches for a service opportunity: |
-|   | Step 1: System displays a home page with a search bar for opportunities |
-|   | Step 2: Volunteer browses for opportunities based on type and location of opportunity |
-|   | Step 3: The system displays the search request of the user and orders the results from closest to furthest from the user |
+|   | Step 1: System displays an option to either log in or create an account (these are described in other use cases) |
+|   | Step 2: System displays a home page with a search bar for opportunities |
+|   | Step 3: Volunteer browses for opportunities based on type and location of opportunity |
+|   | Step 4: System displays the search request of the volunteer and orders the results from closest to furthest away |
 | Primary Actor | Volunteer |
 | Preconditions | Web App is available and Opportunity Database is functioning |
-| Postconditions | The volunteer has received service opportunities based on search results |
+| Postconditions | Volunteer has received service opportunities based on search results |
 
 | Use Case #2 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | Sign Up for a Service Opportunity |
+| Description / Steps | This use case describes a volunteer who signs up for a service opportunity: |
+|   | Step 1: System displays all information regarding the selected service opportunity |
+|   | Step 2: Volunteer clicks agreement to sign up for service opportunity |
+|   | Step 3: Volunteer verifies intention to sign up for service opportunity |
+|   | Step 4: System displays volunteers profile with new service opportunity added |
+| Primary Actor | Volunteer |
+| Preconditions | Volunteer has found desired service opportunity |
+| Postconditions | Volunteering agreement is recorded and saved to volunteer's account |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
