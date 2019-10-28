@@ -72,6 +72,14 @@ To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
 
+I would choose the layered architecture. 
+First of all, it fits perfectly with the MVC framework because the MVC framework is a layered architecture. The model is the database which is the very core of the architecture. That then communicates to the next layer of the controller where the logic resides, and finally goes to the view where it is reflected back to the user to see. The architecture is clear and easy to maintain, test, separate, and update. 
+There could be a separate account for third-party services (with proper authentication) to allow them to input and retrieve data seom the Service Central database. Just a small change within the controller of the architecture. 
+With this architecture, the model and controller can remain the same, with the same database and the same logic. The front-end has the ability to change, so then there can be an embed into another company's website / application. 
+There are some caveats to the architecture though. Since it is very open, it can get very unorganized quickly if there is no one maintaining the code and making sure that it is organized. 
+
+[Layered Architecture for Serve Central](https://drive.google.com/file/d/1Oqr21kb68dbzXrTU_xcuocZZqLNknDRP/view?usp=sharing)
+
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
 
