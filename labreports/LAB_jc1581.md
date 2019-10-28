@@ -28,10 +28,13 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 | Use Case #1 | |
 |---|---|
 | Title | Search for Service Opportunity |
-| Description / Steps | This use case describes a volunteer who searches for a service opportunity: <br> * Step 1:<br> * Step 2:<br> |
+| Description / Steps | This use case describes a volunteer who searches for a service opportunity: |
+|   | Step 1: System displays a home page with a search bar for opportunities |
+|   | Step 2: Volunteer browses for opportunities based on type and location of opportunity |
+|   | Step 3: The system displays the search request of the user and orders the results from closest to furthest from the user |
 | Primary Actor | Volunteer |
-| Preconditions | App is available and Opportunity Database is functioning |
-| Postconditions | The volunteer has recieved service opportunities based on search results |
+| Preconditions | Web App is available and Opportunity Database is functioning |
+| Postconditions | The volunteer has received service opportunities based on search results |
 
 | Use Case #2 | |
 |---|---|
@@ -56,7 +59,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 _Note: You are free to use any diagraming tool and framework that you want as long as it clearly communicates the concept. I typically use a UML System Use Case or [UML Sequence Diagram](https://www.uml-diagrams.org/index-examples.html).  If you do not have a preferred diagramming tool: [draw.io](http://draw.io) or [lucidchart](http://lucidchart.com) are good cloud-based options._
 
 # Step 2: Enhancing an Architecture
-After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recuitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
+After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recruitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
 
 1. Thirdparty services to both input and retrieve data from the Serve Central model/datastore. (For instance, receiving volunteer opportunities from United Way chapters across the country.)
 2. Building organization-specific interfaces on top of the Serve Central business and data logic. (For instance, allowing the registration services of Serve Central to be embedded in the website of local churches, [ah-la Stripe embedding](https://stripe.com/payments/elements).)
