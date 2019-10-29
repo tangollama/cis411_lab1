@@ -1,9 +1,9 @@
 # Lab Report Template for CIS411_Lab1
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
-Name: YOUR NAME
-GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
-(if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
+Name: Issac Houck
+GitHub: [icepop450](https://github.com/icepop450)
+Collaborators: Matthew Bromley, Cory Collette, Josh Coldsmith, and Andre Kerlin
 
 
 # Step 0: Reviewing Architectural Patterns
@@ -21,33 +21,35 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 1) Document two use cases of your choosing
 
-| Use Case #1 | |
-|---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Use Case #1         |                                                |
+|---                  |---                                             |
+| Title               |User                                            |
+| Description / Steps |Create account and sign up to volunteer         |
+| Primary Actor       |Volunteer                                       |
+| Preconditions       |Available volunteer opportunities and a profile |
+| Postconditions      |Signed up for a volunteer opportunity           |
 
-| Use Case #2 | |
-|---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Use Case #2         |                                                |
+|---                  |---                                             |
+| Title               |Organization                                    |
+| Description / Steps |Create an event for volunteers to sign up for   |
+| Primary Actor       |Organization                                    |
+| Preconditions       |Have an organization profile                    |
+| Postconditions      |Have volunteers registered for their event      |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
 
-| Model | View | Controller |
-|---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Model       | View                 | Controller         |
+|---          |---                   |---                 |
+|User         | available events     | pull from database |
+|Organization | event creation form  | add to database    |
+|Admin        | site editing buttons | update database    |
+|Events       | table of events      | pull from database |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
+
+![alt mvc_diagram](/labreports/architecture_cis411_lab.jpg)
 
 _Note: You are free to use any diagraming tool and framework that you want as long as it clearly communicates the concept. I typically use a UML System Use Case or [UML Sequence Diagram](https://www.uml-diagrams.org/index-examples.html).  If you do not have a preferred diagramming tool: [draw.io](http://draw.io) or [lucidchart](http://lucidchart.com) are good cloud-based options._
 
@@ -58,8 +60,10 @@ After an initial release and a few months of operation, Serve Central encounters
 2. Building organization-specific interfaces on top of the Serve Central business and data logic. (For instance, allowing the registration services of Serve Central to be embedded in the website of local churches, [ah-la Stripe embedding](https://stripe.com/payments/elements).)
 
 To support these objectives:
-1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
+1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.  A layered architecture would be beneficial because it allows for easier use of organization specific interfaces in addition to the pre-existing Serve Central logic and it is easy to test because all the layers are seprated.  It would unfortunately require inter dependency throughout the system making redeployment difficult.
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
+
+![alt mvc_diagram](/labreports/architecture(2)_cis411_lab.jpg)
 
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
@@ -71,7 +75,8 @@ In addition to building a new mobile application interface, the grant requires t
 3. Allowing authorized parties to issue queries that traverse the TB's of data stored in your datastore(s).
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
-What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.  
+I will employ(ee) the master slave architecture.  This will help make up scaling the system easier and ensure that enough processing power will be available.  This does also introduce a certain amount of instability and communication latency.  These changes are neccesary because with the increase in traffic in the site more power is needed to keep up with the queries.
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
