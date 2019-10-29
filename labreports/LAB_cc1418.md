@@ -89,6 +89,8 @@ In addition to building a new mobile application interface, the grant requires t
 
 What archictural pattern(s) will you employ to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
 
+To support these needs, I believe the Master-Slave Architecture is the best choice. For as much traffic and space the website will need to host, having multiple slaves to perform queries will greatly speed up the process. Each can take on a different task while having access to all the same information from the master. Transactions can then happen simultaneously, allowing for more exchanges of information and consequently less time taken. This change is important because the Layered Architecture no longer has the computing or server power to handle all the requests being thrown at it. Having multiple slave servers will handle hundreds of thousands of transactions much more easily. A possible downside to this architecture is information being miscommunicated or being communicated more than once. More than one slave may ouch the saem information back to the master, or the master may need information that hasn't been pushed yet from a slave.
+
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
 2. Augment/improve the assignment. Suggest meaningful changes in the assignment and highlight those changes in the extra credit portion of your lab report.
