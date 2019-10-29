@@ -51,10 +51,10 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Model | View | Controller |
 |---|---|---|
-| MongoDB | React Native | Express |
-| MongoDB | Swift | Amazon S3 |
-| Google Firebase | React Native | Github |
-| PounchDB | React Native | Express |
+| Volunteer Info Update| Volunteer Account | Volunteer Info Input, Send Info to Database |
+| Event Title | Event Page | Even Info Input, Send Info to Database |
+| Organization Signup | Organization Page | Organization Info Input, Send Info to Database |
+| Event Registration | Event Page | Volunteer signup, update database with registration |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
@@ -73,7 +73,7 @@ To support these objectives:
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
 
 I would choose the layered architecture. 
-First of all, it fits perfectly with the MVC framework because the MVC framework is a layered architecture. The model is the database which is the very core of the architecture. That then communicates to the next layer of the controller where the logic resides, and finally goes to the view where it is reflected back to the user to see. The architecture is clear and easy to maintain, test, separate, and update. 
+The layered architecture is like the MVC architecture that we are currently working with, but is better to implement for bigger applications and for mulitple views. The model is the database which is the very core of the architecture. That then communicates to the next layer of the controller where the logic resides, and finally goes to the view where it is reflected back to the user to see. The architecture is clear and easy to maintain, test, separate, and update. 
 There could be a separate account for third-party services (with proper authentication) to allow them to input and retrieve data seom the Service Central database. Just a small change within the controller of the architecture. 
 With this architecture, the model and controller can remain the same, with the same database and the same logic. The front-end has the ability to change, so then there can be an embed into another company's website / application. 
 There are some caveats to the architecture though. Since it is very open, it can get very unorganized quickly if there is no one maintaining the code and making sure that it is organized. 
