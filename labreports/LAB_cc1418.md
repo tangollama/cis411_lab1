@@ -34,7 +34,9 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 | Title | Find relevant service opportunities |
 | Description / Steps | A volunteer in the system searches for service oppotunities in the area. The system responds by going through events registered by organizations and listing them for the user. |
 | Primary Actor | A volunteer |
-| Preconditions:| 1. The volunteer has personal information stored in the system 2. The volunteer has specified a location and range to search for service opportunities 3. Organizations have registered events with the system |
+| Preconditions:| 1. The volunteer has personal information stored in the system
+ 2. The volunteer has specified a location and range to search for service opportunities
+ 3. Organizations have registered events with the system |
 | Postconditions: | 1. The system displays search results based on user specified locations |
 
 
@@ -52,7 +54,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 _Note: You are free to use any diagraming tool and framework that you want as long as it clearly communicates the concept. I typically use a UML System Use Case or [UML Sequence Diagram](https://www.uml-diagrams.org/index-examples.html).  If you do not have a preferred diagramming tool: [draw.io](http://draw.io) or [lucidchart](http://lucidchart.com) are good cloud-based options._
 
-![alt MVC diagram](/labreports/Images/MVC_Diagram.jpg)
+![alt MVC diagram](/Images/MVC_Diagram.jpg)
 
 # Step 2: Enhancing an Architecture
 After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recuitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
