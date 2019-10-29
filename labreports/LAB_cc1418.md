@@ -1,7 +1,7 @@
 # Lab Report Template for CIS411_Lab1
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
-Name: YOUR NAME
+Name: Cory Collette
 GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
 (if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
 
@@ -23,19 +23,30 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Send mass email to volunteer base | |
+| FTHO sets up charity and service events. The system enables the Organization to send emails to previous volunteers with information about the new event. | |
+| For the Homeless Org. | |
+| Pre Conditions:
+  1. The Organization has set up the event in the system
+  2. The Organization has selected some or all of their volunteer base which is saved in the system 
+| |
+| Post Conditions:
+  1. The system sends a mass email to specified volunteers
+| |
 
 | Use Case #2 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Find relevant service opportunities | |
+| A volunteer in the system searches for service oppotunities in the area. The system responds by going through events registered by organizations and listing them for the user.  | |
+| A volunteer | |
+| Preconditions:
+  1. The volunteer has personal information stored in the system
+  2. The volunteer has specified a location and range to search for service opportunities
+  3. Organizations have registered events with the system
+| |
+| Postconditions:
+  1. The system displays search results based on user specified locations
+| |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
