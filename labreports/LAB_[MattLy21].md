@@ -1,8 +1,8 @@
 # Lab Report Template for CIS411_Lab1
-Course: Messiah College CIS 411, Fall 2018
+Course: Messiah College CIS 411, Fall 2019
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
 Name: Matt Ly
-GitHub: MattLy21(https://github.com/YOUR_HANDLE)
+GitHub: MattLy21(https://github.com/MattLy21)
 (if appropriate) Collaborators: Leanne Weaver
 
 
