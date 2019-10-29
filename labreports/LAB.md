@@ -3,7 +3,7 @@ Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
 Name: Drew Feldman
 GitHub: [Drew Feldman](https://github.com/DrewRFeldman)
-(if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
+(if appropriate) Collaborators: [I worked with Reagan Lyle with the first few steps of this project, then I did the rest on my own.]
 
 
 # Step 0: Reviewing Architectural Patterns
