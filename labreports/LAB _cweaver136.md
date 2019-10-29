@@ -9,11 +9,6 @@ GitHub: [cweaver136](https://github.com/cweaver136)
 # Step 0: Reviewing Architectural Patterns
 See the [lecture / discussion](https://docs.google.com/presentation/d/1nUcy63FWPFYO3OJmERJpMjEtdaFtaIBbuUkpmNRVRas/edit#slide=id.g45345bd5ea_0_136) from CIS 411. You'll need to be familiar with the content from this lecture to complete this assignment.
 
-Note: you are free to work with classmates on this assignment. _Good architecture is born out of collaboration - not reclusive mad-scientist behavior._ However, if you work with colleagues:
-
-1. You must specifically note your collaborators by name at the top of your report.
-2. You may not completely copy each others work (diagrams and descriptions, even if your solutions are identical).
-
 # Step 1: MVC Architecture
 
 1) Document two use cases of your choosing
@@ -48,8 +43,6 @@ Note: you are free to work with classmates on this assignment. _Good architectur
 
 [Diagram](https://drive.google.com/file/d/1sBFZCq0KhbL6-93iQy9kLfruDjqD2n8s/view?usp=sharing)
 
-_Note: You are free to use any diagraming tool and framework that you want as long as it clearly communicates the concept. I typically use a UML System Use Case or [UML Sequence Diagram](https://www.uml-diagrams.org/index-examples.html).  If you do not have a preferred diagramming tool: [draw.io](http://draw.io) or [lucidchart](http://lucidchart.com) are good cloud-based options._
-
 # Step 2: Enhancing an Architecture
 After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recuitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
 
@@ -62,6 +55,7 @@ To support these objectives:
 I belive that the microservice architecture would work well for this new architecture. This application can be broken up into multiple different pieces software that will be able to function indendently. One piece can be the main app, another piece can be the API implementation for 3rd party services to obtain data, whereas another could be the API implementation to allow for users to register online on other websites.
 
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
+
 [Diagram](https://drive.google.com/file/d/1rhPn4FdTRV1NSHOki5EgVgwXzdXcbXB8/view?usp=sharing)
 
 # Step 3: Scaling an Architecture
@@ -76,9 +70,13 @@ In addition to building a new mobile application interface, the grant requires t
 
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
 
+
+
 I believe that an MVC in combination with Microservice architecture will be sufficient for these needs. There need to be specific pieces to the architecture that are responsible for different things. The MVC architecture allows for the stuff that clients see to be completely different from the logic and functionality. Having these pieces seperate will allow for greater ability of analytics and tracking as well.
 
 With a heavier amount of traffic hitting the database, there should be pieces set up to strictly handle those heavy amount of requests. The existing structure wouldn't be able to handle the immense amount of data well. The database itself would probably have to upgraded and scaled to match the demand of requests. 
+
+
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
