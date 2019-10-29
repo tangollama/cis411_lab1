@@ -76,8 +76,3 @@ I believe that an MVC in combination with Microservice architecture will be suff
 
 With a heavier amount of traffic hitting the database, there should be pieces set up to strictly handle those heavy amount of requests. The existing structure wouldn't be able to handle the immense amount of data well. The database itself would probably have to upgraded and scaled to match the demand of requests. 
 
-
-
-# Extra Credit
-1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
-2. Augment/improve the assignment. Suggest meaningful changes in the assignment and highlight those changes in the extra credit portion of your lab report.
