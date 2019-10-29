@@ -21,6 +21,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 1) Document two use cases of your choosing
 
+
 | Use Case #1 | |
 |---|---|
 | Title | Send mass email to volunteer base |
@@ -28,6 +29,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 | Primary Actor | For the Homeless Org. |
 | Pre-Conditions: | 1. The Organization has set up the event in the system<br>2. The Organization has selected some or all of their volunteer base which is saved in the system |
 | Post-Conditions: | 1. The system sends a mass email to specified volunteers |
+
 
 | Use Case #2 | |
 |---|---|
@@ -40,6 +42,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
 
+
 | Model | View | Controller |
 |---|---|---|
 | Volunteers | Login Screen | Registering a User |
@@ -48,11 +51,14 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 | Events | Event Info Page | Creating an Event |
 | Locations | Map View Page | Signing up for an event |
 
+
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
 _Note: You are free to use any diagraming tool and framework that you want as long as it clearly communicates the concept. I typically use a UML System Use Case or [UML Sequence Diagram](https://www.uml-diagrams.org/index-examples.html).  If you do not have a preferred diagramming tool: [draw.io](http://draw.io) or [lucidchart](http://lucidchart.com) are good cloud-based options._
 
-![alt MVC diagram](/Images/MVC_Diagram.jpg)
+
+![alt MVC diagram](/Images/MVC_Diagram.jpg "Step 1 Diagram")
+
 
 # Step 2: Enhancing an Architecture
 After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recuitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
@@ -64,6 +70,13 @@ To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
 
+
+To support these objectives, the architectural pattern I believe is appropriate is a Layered Architecture. Within a layered architecture, Serve Central can separate their processes and make them as complex as needed to support their growth while still maintaining relatively simple intereaction between the layers. Third-party services will be able to input and output data with Serve Central's database by going through the layers. Interfaces can be built off existing layers, allowing other organizations to embed Serve Central's code into their own structure. The downside to this approach is the independence of the layers, that if an error occurs in one layer, it can potentially cascade errors throughout the others since they rely on eachother.
+
+
+![alt Layered Diagram](/Images/Layered_Diagram.jpg)
+
+
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
 
@@ -74,7 +87,7 @@ In addition to building a new mobile application interface, the grant requires t
 3. Allowing authorized parties to issue queries that traverse the TB's of data stored in your datastore(s).
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
-What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+What archictural pattern(s) will you employ to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
