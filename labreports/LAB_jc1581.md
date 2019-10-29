@@ -90,7 +90,7 @@ In addition to building a new mobile application interface, the grant requires t
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
 What architectural pattern(s) will you employ to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers. <br> <br>
-    Changes are needed due to the very large user base and increasingly complex requirements for Serve Central.
+    Changes are needed due to the very large user base and increasingly complex requirements for Serve Central. <br>
     Master-Slave Architecture: This architecture would be helpful with managing the scale of our growing project. This architecture divides the work among the "slaves", making it easier to process large tasks involving large amounts of data. In order for this to be efficient there will need to be good collaboration of the "slaves" by the "master." A potential concern for this architecture is ensuring that there is good communication between the different parts. While separating the tasks is helpful for productivity, it will ultimately fail if there is bad communication between the parts.
 
 
