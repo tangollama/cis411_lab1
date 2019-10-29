@@ -63,8 +63,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 _Note: You are free to use any diagraming tool and framework that you want as long as it clearly communicates the concept. I typically use a UML System Use Case or [UML Sequence Diagram](https://www.uml-diagrams.org/index-examples.html).  If you do not have a preferred diagramming tool: [draw.io](http://draw.io) or [lucidchart](http://lucidchart.com) are good cloud-based options._
 
-![alt text](cis411_lab1_Step1_Diagram.png "Step 1 Diagram")
-![alt text](cis411_lab1_Step1_Diagram2.png "Step 1 Diagram 2")
+![Step 1 Diagram](cis411_lab1_Step1_Diagram.png "Step 1 Diagram")
 
 # Step 2: Enhancing an Architecture
 After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recruitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
@@ -75,10 +74,10 @@ After an initial release and a few months of operation, Serve Central encounters
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilities of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice. <br> <br>
     Client-Server Architecture: I believe that this architectural pattern would help Serve Central by allowing Thirdparty services to have access to the main central datastore. Due to the advantage of the client-server architecture allowing for access to it by multiple clients, I believe this would prove helpful. One struggle with this architecture would be the centralized server. A common issue with this architecture is that it is risky having all your eggs in one basket. If your centralized server goes down, it could result in your entire website going down. <br>
-    Broker Architecture: This architecture pattern could also be useful going forward for Serve Central. This architecture would do well with offering organization-specific interfaces because of the broker deciding what the user should be directed to. Furthermore the broker could direct third-parties to be able to input and retrieve data. The one drawback of this is that it adds complexity to the project and this project may be too small to need this architecture. <br> <br>
+    Broker Architecture: This architecture pattern could also be useful going forward for Serve Central. This architecture would do well with offering organization-specific interfaces because of the broker deciding what the user should be directed to. Furthermore, the broker could direct third-parties to be able to input and retrieve data. The one drawback of this is that it adds complexity to the project and this project may be too small to need this architecture. <br> <br>
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
 
-![alt text](cis411_lab1_Step2_Diagram.png "Step 2 Diagram")
+![Step 2 Diagram](cis411_lab1_Step2_Diagram.png "Step 2 Diagram")
 
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
