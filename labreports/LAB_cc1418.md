@@ -2,8 +2,8 @@
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
 Name: Cory Collette
-GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
-(if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
+GitHub: [cc1418](https://github.com/cc1418)
+(if appropriate) Collaborators: Issac Houck, Andre Kerlin, Matt Bromley, Josh Coldsmith
 
 
 # Step 0: Reviewing Architectural Patterns
@@ -23,40 +23,37 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Send mass email to volunteer base | |
-| FTHO sets up charity and service events. The system enables the Organization to send emails to previous volunteers with information about the new event. | |
-| For the Homeless Org. | |
-| Pre Conditions:
-  1. The Organization has set up the event in the system
-  2. The Organization has selected some or all of their volunteer base which is saved in the system 
-| |
-| Post Conditions:
-  1. The system sends a mass email to specified volunteers
-| |
+| Title | Send mass email to volunteer base |
+| Description / Steps | An Organization sets up charity and service events. The system enables the Organization to send emails to previous volunteers with information about the new event. |
+| Primary Actor | For the Homeless Org. |
+| Pre Conditions: |
+ 1. The Organization has set up the event in the system
+ 2. The Organization has selected some or all of their volunteer base which is saved in the system |
+| Post Conditions: |
+ 1. The system sends a mass email to specified volunteers |
 
 | Use Case #2 | |
 |---|---|
-| Find relevant service opportunities | |
-| A volunteer in the system searches for service oppotunities in the area. The system responds by going through events registered by organizations and listing them for the user.  | |
-| A volunteer | |
-| Preconditions:
-  1. The volunteer has personal information stored in the system
-  2. The volunteer has specified a location and range to search for service opportunities
-  3. Organizations have registered events with the system
-| |
-| Postconditions:
-  1. The system displays search results based on user specified locations
-| |
+| Title | Find relevant service opportunities |
+| Description / Steps | A volunteer in the system searches for service oppotunities in the area. The system responds by going through events registered by organizations and listing them for the user. |
+| Primary Actor | A volunteer |
+| Preconditions:|
+ 1. The volunteer has personal information stored in the system
+ 2. The volunteer has specified a location and range to search for service opportunities
+ 3. Organizations have registered events with the system |
+| Postconditions: |
+ 1. The system displays search results based on user specified locations |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
 
 | Model | View | Controller |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Volunteers | Login Screen | Registering a User |
+| Contact Information | User Info Page | Updating User Information |
+| Organizations | Organization Info Page | Updating Oranization Info |
+| Events | Event Info Page | Creating an Event |
+| Locations | Map View Page | Searching for Events in an area |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
