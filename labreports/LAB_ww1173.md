@@ -3,7 +3,7 @@ Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
 Name: William Webb
 GitHub: [ww1173](https://github.com/ww1173)
-(if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
+(if appropriate) Collaborators: Caleb Weaver
 
 
 # Step 0: Reviewing Architectural Patterns
@@ -62,7 +62,12 @@ After an initial release and a few months of operation, Serve Central encounters
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
     
+    I think a peer-to-peer structure would work well. It would allow each charity to maintain control over their information while they would also run Serve Central's software in order to connect them with users.
+    This would make it easier to collect data but it would be maintaining and integrating the software very difficult.
+    
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
+
+![](411labimage.jpg)
 
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
@@ -75,6 +80,9 @@ In addition to building a new mobile application interface, the grant requires t
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+
+With such an increase in data it would be unreasonable to assume that charities and their servers would be able to handle the increased traffic. This would require a switch to another architecture. I believe that the MVC model would work the best. It would allow each aspect to be scaled as needed to meet the needs
+of the users. 
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
