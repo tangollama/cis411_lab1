@@ -24,19 +24,28 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 | Use Case #1 | |
 |---|---|
 | Title | Volunteer Keeps Track of His Hours |
-| Description / Steps | After the user has volunteered at least one, the user is able to view a breakdown of his
-volunteering hours on his profile dashboard. |
-| Primary Actor | |
+| Description / Steps | |
+| 1.| The volunteer navigates to his profile |
+| 2.| The profile page displays total hours volunteered and a break down of how they volunteered (org type)|
+| Primary Actor | User -> Volunteer |
 | Preconditions | |
-| Postconditions | |
+| 1.| The user has an account |
+| 2.| The user has volunteered at least one time for a duration of at least 1 hour | 
+| Postconditions | A report is generated on the profile page|
 
 | Use Case #2 | |
 |---|---|
 | Title | Organization Adds New Event |
 | Description / Steps | |
-| Primary Actor | |
+| 1. An organization wants to use this app to add a new event to the system |
+| Primary Actor | Use -> Organization |
 | Preconditions | |
+| 1.| The organization is registered and logged into the system |
+| 2.| The event does not already exist
 | Postconditions | |
+| 1.| The event is added to the map. |
+| 2.| The event shows up in volunteer searches |
+| 3.| Volunteers can register for the event |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
