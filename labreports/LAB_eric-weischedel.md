@@ -25,7 +25,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 |---|---|
 | Title | As a volunteer, I want to search for service opportunities nearby so that I can serve at them. |
 | Description / Steps | 1. Enter keywords<br> 2. Select search radius<br> 3. Submit search |
-| Primary Actor | The user |
+| Primary Actor | User looking to volunteer |
 | Preconditions | - The user has logged into the app.<br> - There are events in the database. |
 | Postconditions | - Search results are displayed.<br> |
 
@@ -33,7 +33,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 |---|---|
 | Title | As a volunteer, I want to sign up for service opportunities so that I can serve at them. |
 | Description / Steps | 1. Input fields necessary for registration<br> 2. Press submit button |
-| Primary Actor | The user |
+| Primary Actor | User looking to volunteer |
 | Preconditions | - User has logged into the app. <br> - User has searched for events and found one to sign up for. |
 | Postconditions | - The backend registers the user for the event.<br> - A *success* view is displayed.<br> - A confirmation email is sent to the user.<br> |
 
