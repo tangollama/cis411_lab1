@@ -31,7 +31,8 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 | Preconditions | |
 | 1.| The user has an account |
 | 2.| The user has volunteered at least one time for a duration of at least 1 hour | 
-| Postconditions | A report is generated on the profile page|
+| Postconditions | |
+| 1.| A report is generated on the profile page|
 
 | Use Case #2 | |
 |---|---|
@@ -44,7 +45,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 | 2.| The event does not already exist
 | Postconditions | |
 | 1.| The event is added to the map. |
-| 2.| The event shows up in volunteer searches |
+| 2.| The event shows up for volunteer searches |
 | 3.| Volunteers can register for the event |
 
 
@@ -52,10 +53,10 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Model | View | Controller |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Volunteer | Profile Page | Load the user's volunteering history |
+| Organization | Dashboard | Load the organizations event listings |
+| Event | Event Listing | Load the details of the listing |
+| Map | Mapbox View | Load and populate the map with event listings |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
