@@ -23,29 +23,29 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | As a volunteer, I want to search for service opportunities nearby so that I can serve at them. |
+| Description / Steps | 1. Enter keywords<br> 2. Select search radius<br> 3. Submit search |
+| Primary Actor | The user |
+| Preconditions | - The user has logged into the app.<br> - There are events in the database. |
+| Postconditions | - Search results are displayed.<br> |
 
 | Use Case #2 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | As a volunteer, I want to sign up for service opportunities so that I can serve at them. |
+| Description / Steps | 1. Input fields necessary for registration<br> 2. Press submit button |
+| Primary Actor | The user |
+| Preconditions | - User has logged into the app. <br> - User has searched for events and found one to sign up for. |
+| Postconditions | - The backend registers the user for the event.<br> - A *success* view is displayed.<br> - A confirmation email is sent to the user.<br> |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
 
 | Model | View | Controller |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Log In model: queries the database to authenticate the user| Log In view: username and password form | Log In controller: routes the visitor to the log in page |
+| Search Results model: gets event search results from the database | Search Results view: list of events given the specified search criteria | Search Results |
+| Event Details | Event Details | Event Details |
+| Event Registration Form | Event Registration Form | Event Registration Form |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
