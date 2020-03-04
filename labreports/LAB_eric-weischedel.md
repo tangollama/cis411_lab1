@@ -42,10 +42,10 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Model | View | Controller |
 |---|---|---|
-| Log In model: queries the database to authenticate the user| Log In view: username and password form | Log In controller: routes the visitor to the log in page |
-| Search Results model: gets event search results from the database | Search Results view: list of events given the specified search criteria | Search Results |
-| Event Details | Event Details | Event Details |
-| Event Registration Form | Event Registration Form | Event Registration Form |
+| Authentication model: queries the database to authenticate the user| Log In view: username and password form | Log In controller: routes the user to the home page |
+| Search Results model: gets search results from the database given the search criteria | Search Results view: list of events given the specified search criteria | Search Results controller: passes search terms, as long as they are not blank, to the model and routes the user to the results page |
+| Event Details model: gets event details from the database for the given event | Event Details view: shows in-depth information about a given event | Event Details controller: passes event ID to the model and routes the user to the event details page |
+| Event Registration model: sends user's registration information to the database | Event Registration view: input fields for user to register | Event Registration controller: passes registration information to the model and routes the user to the success screen |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
