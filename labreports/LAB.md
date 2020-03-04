@@ -1,8 +1,8 @@
 # Lab Report Template for CIS411_Lab1
-Course: Messiah College CIS 411, Fall 2018
-Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
-Name: YOUR NAME
-GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
+Course: Messiah College CIS 411, Fall 2018<br/>
+Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)<br/>
+Name: Tanner Stern<br/>
+GitHub: [tannerstern](https://github.com/tannerstern)<br/>
 (if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
 
 
@@ -23,33 +23,38 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | As a user, I need to be able to search for service opportunities near me. |
+| Description / Steps | 1) The user provides access to their location (through GPS or manual input)<br/> 2) The user enters keywords on which to filter volunteer opportunities<br/> 3) The system determines which service opportunities are physically near the user and fit the search criteria<br/> 4) The user is presented with opportunities that match their criteria on a map |
+| Primary Actor | Volunteer (User of the App) |
+| Preconditions | 1) Events are loaded in the app<br/> 2) User knows their location |
+| Postconditions | The user sees the map that shows relative location and distance between service opportunities |
 
 | Use Case #2 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | As a user, I want to be able to track the volunteer events I have participated in. |
+| Description / Steps | 1) The user clicks on their profile link<br/> 2) The system loads the user's participation data<br/> 3) The system formats the user's data for viewing, organizes it by date and calculates  statistics <br/> 4) The user can view the data<br/> |
+| Primary Actor | Volunteer (User of the App) |
+| Preconditions | The user has participated (registered) for volunteer events |
+| Postconditions | The user sees their participation data |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
 
 | Model | View | Controller |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Volunteer | ProfilePage | ProfileController<sup>1</sup> |
+| Event | EventPage | EventController<sup>2</sup> |
+| User | LoginPage | UserController<sup>3</sup> |
+| Location | EventMapPage | EventMapController<sup>4</sup> |
+_Notes on functionality:<br/>
+<sup>1</sup> Loads volunteer data, calculates statistics<br/>
+<sup>2</sup> Loads event information, title, type<br/>
+<sup>3</sup> Checks user input against DB, verifies registration<br/>
+<sup>4</sup> Places events on map by location_
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
-_Note: You are free to use any diagraming tool and framework that you want as long as it clearly communicates the concept. I typically use a UML System Use Case or [UML Sequence Diagram](https://www.uml-diagrams.org/index-examples.html).  If you do not have a preferred diagramming tool: [draw.io](http://draw.io) or [lucidchart](http://lucidchart.com) are good cloud-based options._
+![MVC Diagram](../assets/step1_diagram.png "MVC Diagram")
 
 # Step 2: Enhancing an Architecture
 After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recuitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
