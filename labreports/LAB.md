@@ -23,29 +23,36 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title |As a volunteer, I want to be aware of service activities near me that I can serve at|
+| Description / Steps |
+1| Login to user account
+2| Search for nearby events 
+3| sign up for events 
+4| Log progress for hours served|
+| Primary Actor |Volunteer|
+| Preconditions |Events have to be logged into system, User must have an account to register for events|
+| Postconditions |Confirmation email is sent to confirm of the date of the event and location|
 
 | Use Case #2 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title |
+| Use Case #2 |As an Organization, I want to be able to create an event where volunteers can sign up|
+| Description / Steps |
+1| Login to Organizational account
+2| Create an event with a date and location|
+| Primary Actor |Event Organizer |
+| Preconditions |Organization must have an organization account, Event must already exsist outside of the app|
+| Postconditions |Email alert when new volunteers sign up for the event|
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
 
-| Model | View | Controller |
+| Model(data/object) | View(a page) | Controller(action) |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| User | Profile Page | Edit Profile details |
+| User | Login |User enters username and password to access users information|
+| Organization | Event Page | Edit event's location or time |
+| User | Volunteer Map | search for nearby events |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
