@@ -63,6 +63,7 @@ After an initial release and a few months of operation, Serve Central encounters
 
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
+- The best solution for these problems would seem to be a peer to peer architecture. Similar to GitHub, if thirdparty services want to imput and retrieve data, a peer to peer offers an architecture that distributes equal control to all nodes. All parties could pull and push their data for everyone else to recieve and make changes to if necessary. The downside to this, however, would be that there is no central point of data storage, so there is no one place to control the access of data.
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
 
 # Step 3: Scaling an Architecture
