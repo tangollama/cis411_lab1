@@ -66,6 +66,8 @@ To support these objectives:
 - The best solution for these problems would seem to be a peer to peer architecture. Similar to GitHub, if thirdparty services want to imput and retrieve data, a peer to peer offers an architecture that distributes equal control to all nodes. All parties could pull and push their data for everyone else to recieve and make changes to if necessary. The downside to this, however, would be that there is no central point of data storage, so there is no one place to control the access of data.
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
 
+![alt text](https://github.com/Willnew98/cis411_lab1/blob/master/labreports/Untitled%20Diagram.png)
+
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
 
@@ -77,6 +79,8 @@ In addition to building a new mobile application interface, the grant requires t
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+
+-The best architectural pattern for these needs would be a client server architecture. Knowing that storage will quickly exceed 50TB, we need a large computer, i.e. a server to manage that data. The benefits of a client server architecture is that all of the data is centralized, so it would be much easier for researchers to examine patterns in the data. The biggest consequence would be the occasional reliability issue, but I believe the benefits outweigh the cost. Changes are most definitely needed because a peer to peer architecture would not be able to sustain such large quantities of data, and it would make traversing through data so much harder since theres no central data storage. A client server architecture would also signifigantly improve any latency issues.
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
