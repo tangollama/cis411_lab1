@@ -50,11 +50,13 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 | Model(data/object) | View(a page) | Controller(action) |
 |---|---|---|
 | User | Profile Page | Edit Profile details |
-| User | Login |User enters username and password to access users information|
-| Organization | Event Page | Edit event's location or time |
-| User | Volunteer Map | search for nearby events |
+| User | Registration page |Create new volunteer account|
+| Organization event | Event Page | Edit event's location or time |
+| User | Volunteer Map | sign up for an event|
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
+
+[My Diagram](https://www.lucidchart.com/invitations/accept/49f88743-5d99-4650-97c5-696b89e2a9ff)
 
 _Note: You are free to use any diagraming tool and framework that you want as long as it clearly communicates the concept. I typically use a UML System Use Case or [UML Sequence Diagram](https://www.uml-diagrams.org/index-examples.html).  If you do not have a preferred diagramming tool: [draw.io](http://draw.io) or [lucidchart](http://lucidchart.com) are good cloud-based options._
 
