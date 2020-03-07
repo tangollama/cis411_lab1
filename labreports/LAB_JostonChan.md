@@ -3,7 +3,7 @@ Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
 Name: YOUR NAME
 GitHub: [JostonChan](https://github.com/JostonChan)
-(if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
+(if appropriate) Collaborators: [Tanner Stern](https://github.com/tannerstern)
 
 
 # Step 0: Reviewing Architectural Patterns
@@ -52,17 +52,24 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 _Note: You are free to use any diagraming tool and framework that you want as long as it clearly communicates the concept. I typically use a UML System Use Case or [UML Sequence Diagram](https://www.uml-diagrams.org/index-examples.html).  If you do not have a preferred diagramming tool: [draw.io](http://draw.io) or [lucidchart](http://lucidchart.com) are good cloud-based options._
 
-![MVC_Model]()
+![MVC_Model Diagram](images/MVC_Model.png)
 
 # Step 2: Enhancing an Architecture
 After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recuitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
 
-1. Thirdparty services to both input and retrieve data from the Serve Central model/datastore. (For instance, receiving volunteer opportunities from United Way chapters across the country.)
+1. Third party services to both input and retrieve data from the Serve Central model/datastore. (For instance, receiving volunteer opportunities from United Way chapters across the country.)
 2. Building organization-specific interfaces on top of the Serve Central business and data logic. (For instance, allowing the registration services of Serve Central to be embedded in the website of local churches, [ah-la Stripe embedding](https://stripe.com/payments/elements).)
 
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
+
+**Answer:**
+For this redesign, I would suggest the **Layer architecture pattern** because it breaks down the web application into several layers, each of which has a certain level of abstraction and is independent from the other layers. Therefore, a layer has little to no knowledge of the inner workings of other layers in the architecture. Thus, they will have no impact to the other layers and pinpoints the location of errors. It will also ease the testability of the web application due to the layered nature. 
+
+The main issue with the redesign is **the complexity of the achitecture pattern**. Layered architecture pattern is complex because of the importance of each layer not being impacted by other layers. Not only that, the performance is low. The web application must go through multiple layers of the architecture to fulfill a request. 
+
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
+![Layered Architecture Diagram](images/Layered_Architecture.png)
 
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
@@ -75,6 +82,9 @@ In addition to building a new mobile application interface, the grant requires t
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+
+**Answer:**
+Changes are needed because of the slow processing speed of the current MVC model due to large volume of data. To combat this, I would suggest implementing the **microservice architecture pattern**. With this, the structure of the web application will be broken down even more into distinct service components, causing development and deployment of services to be easier as we do not need to modify the whole application. The benefits of implementing the microservice pattern is due to its scalability. We will able scale up or down for certain services and pinpoint and maintain services that have network traffic. Thus, we are able to work with the large volume of data. Not only that, if one of the service components fails, we can use another service component and the application will continue to run. The drawback with this architecture pattern is **the communication between services is complex** because of the broken-down nature. Additionally, we need to create and maintain multiple databases for the many services. 
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
