@@ -59,7 +59,7 @@ After an initial release and a few months of operation, Serve Central encounters
 
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.<br><br>
-ServeCentral should create a web API. It would allow thirdparty services to both input and retrieve data from the database, and it would allow companies to build their own interfaces on top of the ServeCentral business logic. There could be an API endpoint for each function that a company would need to perform. This would satisfy both of the new requirements. One potential issue is that it requires companies to figure out how to use it, especially if they don't already have API experience.
+Serve Central should create a web API. It would allow thirdparty services to both input and retrieve data from the database, and it would allow companies to build their own interfaces on top of the Serve Central business logic. There could be an API endpoint for each function that a company would need to perform. This would satisfy both of the new requirements. One potential issue is that it requires companies to figure out how to use it, especially if they don't already have API experience.
 ```
 http://servecentral.com/getEvent?eventId=123
 http://servecentral.com/createEvent?title=Backyard&description=...
