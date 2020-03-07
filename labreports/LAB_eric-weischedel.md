@@ -81,7 +81,16 @@ In addition to building a new mobile application interface, the grant requires t
 
 What archictural pattern(s) will you employ to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
 
-I would employ *load balacing*. 
+These new requirements will break the existing setup because there would be too much traffic. The servers would not be able to handle that many requests. Therefore, a change in the architecture is needed. In order to solve this problem, Serve Central needs to get much more computing power and storage and employ *load balacing*. With load balancing, traffic can automatically be spread across all of Serve Central's servers so that any one server does not get overloaded.
+- Benefits
+  - Satisfies the new requirements
+  - Increased performance
+  - Expandable by adding more servers
+  - Good long-term solution
+- Consequences
+  - Expensive
+  - Time-consuming
+  - Potential debugging complications
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
