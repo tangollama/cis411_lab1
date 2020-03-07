@@ -1,7 +1,7 @@
 # Lab Report Template for CIS411_Lab1
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
-Name: YOUR NAME
+Name: Nik Mourelatos
 GitHub: [NikMourelatos](https://github.com/NikMourelatos)
 <br/>Collaborators: Eric Weischedel
 
