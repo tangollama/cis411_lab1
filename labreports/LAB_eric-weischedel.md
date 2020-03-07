@@ -94,4 +94,7 @@ These new requirements will break the existing setup because there would be too 
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
+
+![Final architecture diagram](images/loadbalancing.jpg)
+
 2. Augment/improve the assignment. Suggest meaningful changes in the assignment and highlight those changes in the extra credit portion of your lab report.
