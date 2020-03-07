@@ -1,9 +1,8 @@
-# Lab Report Template for CIS411_Lab1
-Course: Messiah College CIS 411, Fall 2018<br/>
+# CIS411_Lab1 Lab Report: tannerstern
+Course: Messiah College CIS 411, Spring 2020<br/>
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)<br/>
 Name: Tanner Stern<br/>
-GitHub: [tannerstern](https://github.com/tannerstern)<br/>
-(if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
+GitHub: [tannerstern](https://github.com/tannerstern)
 
 
 # Step 0: Reviewing Architectural Patterns
@@ -59,12 +58,15 @@ _Notes on functionality:<br/>
 # Step 2: Enhancing an Architecture
 After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recuitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
 
-1. Thirdparty services to both input and retrieve data from the Serve Central model/datastore. (For instance, receiving volunteer opportunities from United Way chapters across the country.)
+1. Third party services to both input and retrieve data from the Serve Central model/datastore. (For instance, receiving volunteer opportunities from United Way chapters across the country.)
 2. Building organization-specific interfaces on top of the Serve Central business and data logic. (For instance, allowing the registration services of Serve Central to be embedded in the website of local churches, [ah-la Stripe embedding](https://stripe.com/payments/elements).)
 
 To support these objectives:
-1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
-2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
+1. *What architectural patterns are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture as well as as least one potential issue / adverse consequence of your choice.*<br/>
+The architecture pattern I would recommend moving to for the increase in service is the **Layered Patter**. A layered pattern is not quite as tightly coupled as MVC, which allows for customizations at different layers. Third parties that need specific interfaces and data logic for accessing Serve Central data can have that autonomy. Where MVC would require all of those details to be defined in one place, a layered pattern provides some separation (containment) for different organizational approaches. One potential issue for moving in this direction is that managing third party organizational components within the structure becomes much more complex. Dependencies from one component in the layer may conflict with those of another.
+2. *Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.*<br/>
+
+![Layer Diagram](../assets/step2_diagram.png "Layer Diagram")
 
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
@@ -76,7 +78,7 @@ In addition to building a new mobile application interface, the grant requires t
 3. Allowing authorized parties to issue queries that traverse the TB's of data stored in your datastore(s).
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
-What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+What archictural pattern(s) will you employ to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
