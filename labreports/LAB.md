@@ -78,7 +78,9 @@ In addition to building a new mobile application interface, the grant requires t
 3. Allowing authorized parties to issue queries that traverse the TB's of data stored in your datastore(s).
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
-What archictural pattern(s) will you employ to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+*What archictural pattern(s) will you employ to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.*
+
+The increased demand on the architecture will be too much for exisitng patterns to handle. They are not built to handle volume. To meet each of the above requirements, we will need to employ several patterns which augment the capabilities of their predacessors. First, to handle high-volumes of data and low-latency needs, we will use the **microservice pattern**. Microservice architecture allows for scalability not present in Layered or MVC: the whole program doesn't need to be fast, just the parts that are in high-demand. Whatever cloud provider that ServeCentral uses can increase resources for critial services as they are needed. The second pattern to implement is **Master-Slave** on ServeCentral's databases. With multiple parties requiring access to data there should be copies of the data so that research queries do not interfere with core-functionality. Furthermore, slave databases could be geographically distributed to provide faster access and greater redundancy.
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
