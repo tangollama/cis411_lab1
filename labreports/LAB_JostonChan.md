@@ -2,7 +2,7 @@
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
 Name: YOUR NAME
-GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
+GitHub: [JostonChan](https://github.com/JostonChan)
 (if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
 
 
@@ -23,33 +23,36 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title |  Display events' location in the location view |
+| Description / Steps | User is able to locate events to find volunteer work in the area.  |
+| Primary Actor | User |
+| Preconditions | 1.Information of the events are already created and stored in the database. |
+|               | 2.The view and controller for the location are already created. |
+| Postconditions| The user is able to view the events in the area. |
 
 | Use Case #2 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | View description of the event |
+| Description / Steps | 1. When a user clicks on a event, the web application displays the description of the event. |
+| Primary Actor | User|
+| Preconditions | The web application must have the description of the event in the database. |
+| Postconditions | The web application display the description of the event. |
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
 
 | Model | View | Controller |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Login model - retrieve the information from the controller and updates the login model  | Login view - User can view the login page, input his/her username and password, and click the login button to login.  | LoginController.php - retrieves, verifies and sends the login information to a model.  |
+| User model - stores the user's information to a database.| Profile view - user can view their information.| UserController.php - retrieves, verifies and sends the user's information from view to a model. |
+| Location model - stores the event's location to a database.| Location view - user can view their location and its surrounding area. | LocationController.php - retrieves, verifies and sends the location of a event to a model.|
+| Event model - stores the event's information to a database.| Event view - displays the information of the events. | EventController.php - retrieves, verifies and sends the information of a event to a model. |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
 _Note: You are free to use any diagraming tool and framework that you want as long as it clearly communicates the concept. I typically use a UML System Use Case or [UML Sequence Diagram](https://www.uml-diagrams.org/index-examples.html).  If you do not have a preferred diagramming tool: [draw.io](http://draw.io) or [lucidchart](http://lucidchart.com) are good cloud-based options._
+
+![MVC_Model]()
 
 # Step 2: Enhancing an Architecture
 After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recuitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
