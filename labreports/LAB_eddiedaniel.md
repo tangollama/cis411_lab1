@@ -24,7 +24,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 | Use Case #1 | |
 |---|---|
 | Title | Users want to see places to volunteer at near them |
-| Description / Steps | User creates account by utilizing a username and password, User logs in using thier newly createdc credentials|
+| Description / Steps | User creates account by utilizing a username and password, User logs in using thier newly created credentials|
 | Primary Actor | Volunteer |
 | Preconditions | Database is connected to allow users to add account information, User enters account information correctly when logging in |
 | Postconditions | Users receive confirmation email, Users are able to see events near them periodically and log in successfully|
