@@ -90,6 +90,7 @@ These new requirements will break the existing setup because there would be too 
 - Consequences
   - Expensive
   - Time-consuming
+  - If the load balancer gets overloaded, the whole system fails
   - Potential debugging complications
 
 # Extra Credit
