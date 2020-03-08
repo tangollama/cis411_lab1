@@ -53,14 +53,13 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Model | View | Controller |
 |---|---|---|
-| Volunteer | Profile Page | Load the user's volunteering history from the DB|
-| Organization | Dashboard | Load the organizations event listings from the DB|
-| Event | Event Listing | Load the details of the listing from the DB|
-| Map | Mapbox View | Load and populate the map with event listings from the DB|
+| Volunteer History | Profile Page | Load the user's volunteering history from the DB|
+| Organization Event Listing | Dashboard | Load the organizations event listings from the DB|
+| Event Information | Event Listing | Load the details of the listing from the DB|
+| Map Events In Area | Mapbox View | Load and populate the map with event listings from the DB|
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
-_Note: You are free to use any diagraming tool and framework that you want as long as it clearly communicates the concept. I typically use a UML System Use Case or [UML Sequence Diagram](https://www.uml-diagrams.org/index-examples.html).  If you do not have a preferred diagramming tool: [draw.io](http://draw.io) or [lucidchart](http://lucidchart.com) are good cloud-based options._
 
 # Step 2: Enhancing an Architecture
 After an initial release and a few months of operation, Serve Central encounters a tremendous growth opportunity to extend their service and provide a volunteer recuitment and management interface to __four__ of the primary volunteer entities in the United States. As such, a reevaluation of the architecture is required, one that allows:
@@ -70,6 +69,20 @@ After an initial release and a few months of operation, Serve Central encounters
 
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
+    1. Microservice
+        - Benefits:
+            - Easy to scale and add more base features
+            - Easy to create API services for embedding in external websites
+        - Issues:
+            - Can be overly complex for small applications
+            - Communication between services becomes complex
+    2. Broker
+        - Benefits:
+            - Allows for scalability
+            - Allows for transparency to clients, offering easy API access
+        - Issues:
+            - May be too complex for a small application
+
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
 
 # Step 3: Scaling an Architecture
@@ -83,6 +96,8 @@ In addition to building a new mobile application interface, the grant requires t
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+
+* I would implement a microservices architecture for this change. I would create microservices to handle current features of the app, allowing them to be used across different platforms (web, native mobile). Microservices will be available to create API’s to allow for embedding in third party applications and for creating API’s to allow authorized apps to issue queries to access data for different uses such as research (3 and 4). We will be able to handle mass influxes of data by separating data ingestion into a separate microservice so it can run without the overhead of the rest of the app (1), and connecting them to data storage microservices for high-speed read and write queries (2). All of these microservices will allow for a highly scalable app that can accommodate large influxes of users and data creation. Keeping each microservice separate from each other but allowing for interconnectivity will allow for high performance during peak use periods as users will only need to utilize the services that are required for completing their current task, freeing resources for other users working on other tasks. The consequences of creating a microservice architecture is increased complexity. With the migration of MVC services to microservices and creation of new microservices, the application ecosystem will get considerably complex, however I believe the benefits will outweigh this consequence. 
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
