@@ -88,4 +88,10 @@ Changes are needed because of the slow processing speed of the current MVC model
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
+
+**Answer:**
+![Microservices Architecture Diagram](images/Microservice.jpg)
+
 2. Augment/improve the assignment. Suggest meaningful changes in the assignment and highlight those changes in the extra credit portion of your lab report.
+
+Step 2 and Step 3 was self-explanatory but Step 1 was a bit confusing as I had a difficult time figuring the MVC model and how to properly write use cases. I would suggest providing an example of a use case. 
