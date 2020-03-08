@@ -3,7 +3,7 @@ Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
 Name: Wesley Chong
 GitHub: [Wesley Chong](https://github.com/wesleycqy)
-Collaborators: Joshua Keong
+Collaborators: [Joshua Keong](https://github.com/jk1595)
 
 
 # Step 0: Reviewing Architectural Patterns
@@ -31,11 +31,11 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #2 | |
 |---|---|
-| Title | As a user |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title | As a user, I want to  be able to change my location to wherever I please. If I am going on vacation or visiting my hometown, I want to still be able to register to be a volunteer not at my current location. |
+| Description / Steps |From the first page, the user will select the "Location" button at the top of the page. This button will be displaying the automatically detected location of the user. From there, the user will select the text box and type in their preferred volunteer area/location. The app will then find the appropriate opportunities around that particular location. |
+| Primary Actor |User|
+| Preconditions |1. Location-based services to have a pre-detected location displayed.<br/>2. All volunteer opportunities to have locations set.<br/>3. Use of other third-party applications (Eg. Google Maps API) to suggest other locations in the case that the user typed an unidentifiable location. |
+| Postconditions | 1. Display of volunteer opportunities around user-entered location.<br/>2. App to store the location for the purpose of suggesting the next time the user wants to change their location.|
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
