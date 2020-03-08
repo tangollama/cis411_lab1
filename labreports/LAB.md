@@ -87,6 +87,8 @@ In addition to building a new mobile application interface, the grant requires t
 
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
 
+To complete these four tasks, I will use a combination of two archictures, [Blackboard](https://docs.google.com/presentation/d/1ffFm8bzBrIW2CtywJju77uehQolsN6H8ig90s_iBKfE/edit#slide=id.g45345bd5ea_0_120) and [MVC](https://docs.google.com/presentation/d/1ffFm8bzBrIW2CtywJju77uehQolsN6H8ig90s_iBKfE/edit#slide=id.g45345bd5ea_0_0) architectures. The MVC model will help keep the project scaleable with its easy to adopt model and functional management advantages. The blackboard architecture will be used for having to sort through large data sets in a short time. We will use the blackboard architecture to allow authorized parties and researchers to query the database for future oppurtunities. These changes are needed to help combat all of the new users on the mobile application interface. We need to make the app fast and reliable for user so they keep returning to use the app.
+
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
 2. Augment/improve the assignment. Suggest meaningful changes in the assignment and highlight those changes in the extra credit portion of your lab report.
