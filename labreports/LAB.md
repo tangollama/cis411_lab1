@@ -35,8 +35,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #2 | |
 |---|---|
-| Title |
-| Use Case #2 |As an Organization, I want to be able to create an event where volunteers can sign up|
+| Title |As an Organization, I want to be able to create an event where volunteers can sign up|
 | Description / Steps |
 1| Login to Organizational account
 2| Create an event with a date and location|
