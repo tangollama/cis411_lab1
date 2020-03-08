@@ -68,7 +68,12 @@ After an initial release and a few months of operation, Serve Central encounters
 
 To support these objectives:
 1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
+
+The architectural pattern that would be appropriate for these changes is the [Client-Server](https://docs.google.com/presentation/d/1ffFm8bzBrIW2CtywJju77uehQolsN6H8ig90s_iBKfE/edit#slide=id.g45345bd5ea_0_128) architecture. This architecture is effective when the server interacts with the client in a rountinely manner. This will create a simple connection from the client trying to organize a volunteer-based events and the server processing the request. One potential issue with using this architecture is the reliability of the server to be able to process all the request that it is recieving. 
+
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
+
+[My Diagram](https://www.lucidchart.com/invitations/accept/b87c5476-21a5-4409-9f7c-8c33dda47baa)
 
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
