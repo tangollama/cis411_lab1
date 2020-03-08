@@ -3,7 +3,7 @@ Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
 Name: Bryce Doane
 GitHub: [BryceDoane](https://github.com/BryceDoane)
-(if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
+(if appropriate) Collaborators: Will Newcomb and Matt Laven
 
 
 # Step 0: Reviewing Architectural Patterns
@@ -58,8 +58,12 @@ After an initial release and a few months of operation, Serve Central encounters
 2. Building organization-specific interfaces on top of the Serve Central business and data logic. (For instance, allowing the registration services of Serve Central to be embedded in the website of local churches, [ah-la Stripe embedding](https://stripe.com/payments/elements).)
 
 To support these objectives:
-1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
+1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.<br><br>
+**The architectural patterns that are appropriate to support these objectives are broker and rails architecture.  Broker architecture is very easy to expand and grow with while keeping easy maintanence.  One issue with this pattern is the need for special software while also relying heavily on the broker.  If the broker goes out, the whole system would be down.  For rails, it is cost-effective and enables easier and faster development.  The consequences of rails is that it is often seen as slow.**<br><br>
+
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
+
+![New Serve Central Model](NewModel.jpg)
 
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
@@ -72,7 +76,12 @@ In addition to building a new mobile application interface, the grant requires t
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
-
+<br><br>
+**A solution similar to Docker (which uses client-server) would be best for this immense project. Docker uses containers to scale up and down which would be ideal to handle these future needs with the ease and speed necessary. The system needs to be changed because a broker architecture would not be able to handle the size with the speed necessary of the system.  It is simply too much data to process and distribute in too little time.  Some potential consequences of the new system are high cost and also the centralization aspect if a server goes down**
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
+<br><br>
+![Extra Credit Diagram](ExtraCredit.jpg)
 2. Augment/improve the assignment. Suggest meaningful changes in the assignment and highlight those changes in the extra credit portion of your lab report.
+<br><br>
+**My only real suggestion to make to this lab would be to hint at what answers may be more correct than others.  In class we very briefly went over each of the many architectural types and did not go in-depth with all of them so at times, I had to look up many of them which brought more confusion from some internet sources.**
