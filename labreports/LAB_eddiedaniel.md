@@ -42,10 +42,10 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Model| View| Controller |
 |---|---|---|
-| Event planners want to see a list of volunteers for their event|database selects all users that regisered for an event | list of all volunters from specifc event show up|
-| Users want to see what type of places they can volunteer at | databse gathers field data fo each event| users see what catergory each event is in |
-| Users want to see how many hours they have volunteered | Users sign in and trereives data from datbases | List of hours shows up |
-| Users want to see events near them | put location data into search field | Locations come up |
+| Event planners want to see a list of volunteers for their event|Database selects all users that regisered for an event | List of all volunters from specifc event show up|
+| Users want to see what type of places they can volunteer at | Database gathers field data of each event| users see what category each event is in |
+| Users want to see how many hours they have volunteered | Users sign in and it retreives data from databases | List of hours shows up |
+| Users want to see events near them | Users put location data into search field | Locations come up |
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
