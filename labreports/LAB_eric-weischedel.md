@@ -99,3 +99,5 @@ These new requirements will break the existing setup because there would be too 
 ![Final architecture diagram](images/loadbalancing.jpg)
 
 2. Augment/improve the assignment. Suggest meaningful changes in the assignment and highlight those changes in the extra credit portion of your lab report.
+
+It took me a while to figure out what to do for the models, views, and controllers. I did not fully understand what the purpose of each element of MVC was, so it was hard to come up with them without any help. I could look at the lecture slides but they are pretty high-level. I suggest adding some form of guidance for that part, perhaps one model, view, and controller could be filled in for us.
