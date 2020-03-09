@@ -51,7 +51,7 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
-[embed](https://docs.google.com/drawings/d/1dx4UXtgw9uGFj_33FojDXoQnCtVw0Ns_nXovB1lXTbI/edit?usp=sharing)
+[Actor Interaction](https://docs.google.com/drawings/d/1dx4UXtgw9uGFj_33FojDXoQnCtVw0Ns_nXovB1lXTbI/edit?usp=sharing)
 
 _Note: You are free to use any diagraming tool and framework that you want as long as it clearly communicates the concept. I typically use a UML System Use Case or [UML Sequence Diagram](https://www.uml-diagrams.org/index-examples.html).  If you do not have a preferred diagramming tool: [draw.io](http://draw.io) or [lucidchart](http://lucidchart.com) are good cloud-based options._
 
@@ -70,7 +70,7 @@ One potential issue with this structure could be that it is so simple, if one pa
 
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements. 
 
-[embed](https://docs.google.com/drawings/d/1KSWc-J8n7oOi0Rps1f2sIRDhwnOtTHK2-GKQQF60xEw/edit?usp=sharing)
+[New Server Central Architecture](https://docs.google.com/drawings/d/1KSWc-J8n7oOi0Rps1f2sIRDhwnOtTHK2-GKQQF60xEw/edit?usp=sharing)
 
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
@@ -85,6 +85,8 @@ In addition to building a new mobile application interface, the grant requires t
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
 
 For this application, I would use the the blackboard architecture. Because it is used for large data sets it is ideal for the 50Tb of data that is going to be added. It also gives a way for the user to access data within the latency requirements because it leverages communication between the user and the data. 
+
+Some consequences of having this architecture could be that it is complex making any changes to the system and could lead to a big breakdown. This would have to happen in the founddational data though which would be rare. 
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
