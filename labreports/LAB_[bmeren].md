@@ -1,9 +1,8 @@
 # Lab Report Template for CIS411_Lab1
 Course: Messiah College CIS 411, Fall 2018
 Instructors: [Joel Worrall](https://github.com/tangollama) & [Trevor Bunch](https://github.com/trevordbunch)
-Name: YOUR NAME
-GitHub: [YOUR_HANDLE](https://github.com/YOUR_HANDLE)
-(if appropriate) Collaborators: [Names of colleagues you worked with on this assignment]
+Name: Becky Merendino
+GitHub: [bmeren](https://github.com/YOUR_HANDLE) Collaborators: [Billy Park]
 
 
 # Step 0: Reviewing Architectural Patterns
@@ -23,29 +22,29 @@ Based on the [this](https://docs.google.com/presentation/d/1UnU0xU0wF1l8pAB8trtL
 
 | Use Case #1 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title |ServeCentral|
+| Description / Steps |Once ServeCentral completes and releases a fully functioning app, users will be able to create and account to find and sign up for service projects. The technical solution will consist of Firebase and React Native.|
+| Primary Actor |Volunteers|
+| Preconditions |It is too hard for potential volunteers to find service projects in their area.|
+| Postconditions |Potential volunteers will be able to register once on ServeCentral's app which will show them all the active service projects in their area.|
 
 | Use Case #2 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| Title |ServeCentral 411|
+| Description / Steps |Using a technical solution that consists of Firebase and Node.js, ServeCentral will create an affordable website in which organizations will be able to find volunteers to recruit, keep track of said recruits, and also organize their own service projects.|
+| Primary Actor |Organizations|
+| Preconditions |There is no consistent and reliable way to recruit volunteers, making it difficult for organizations to do so. It is also difficult for organizations to keep track of which volunteer signed up for which service project, and it is difficult for organizations to keep track of small, easy to forget tasks.|
+| Postconditions |The goal is to build an affordable website that streamlines all the hard to organize tasks that organizations have to do in order to save them time.|
 
 
 2) Highlight a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
 
 | Model | View | Controller |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+|Database|Webpage|Registration Form|
+|Email List|Email|User Form|
+|Schedule|Event Calendar|Planner|
+|Volunteer List|Profile|Edit Account Page|
 
 3) Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
 
@@ -58,8 +57,11 @@ After an initial release and a few months of operation, Serve Central encounters
 2. Building organization-specific interfaces on top of the Serve Central business and data logic. (For instance, allowing the registration services of Serve Central to be embedded in the website of local churches, [ah-la Stripe embedding](https://stripe.com/payments/elements).)
 
 To support these objectives:
-1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.
+1. What architectural patterns (either of those presented in class on based on your own research) are appropriate? Justify your response, highlighting your presumed benefits / capabilties of your chosen architecture(s) **as well as as least one potential issue / adverse consequence** of your choice.\
+An architectural pattern that may be appropriate is client-server. It allows for multiple clients in one centralized source meaning third party services may input and recieve information, and it would all be streamlined in one place. Also because it is all on the internet, it would be relatively easy to imbed services on other websites. The issue is there may be some issues with management due to multiple parties being able to add and access information, and if there is too much information there may be trouble with scaling.
+
 2. Using your preferred diagramming tool, generate a diagram of the new Serve Central architecture that supports these two new requirements.
+![CIS411 Lab Diagram](CIS411_Lab1Diagram.png)
 
 # Step 3: Scaling an Architecture
 18 months into the future, Serve Central is experiencing profound growth in the use of the service with more than 100k daily, active users and nearly 1M event registrations per month. As a result, the [Gates Foundation](https://www.gatesfoundation.org/) has funded a project to build and launch a mobile application aimed at encouraging peer-to-peer volunteer opportunity promotion and organization. 
@@ -72,6 +74,8 @@ In addition to building a new mobile application interface, the grant requires t
 4. Enabling researchers to examine patterns of volunteer opportunities as a way of determining future grant investments.
 
 What archictural pattern(s) will you employee to support each of these needs? What will the benefits and consequences be? Why are changes needed at all? Justify your answers.
+
+I would employ blackboard because it is used often for large data sets, is very flexible, and can hold multiple components. A consequence may be that if there is change made to the foundational data, it could cause a ripple effect of complex change.
 
 # Extra Credit
 1. Create and embed a comprehensive diagram of your final architecture (i.e. one that meets all the requirements of this lab, including Step 3).
