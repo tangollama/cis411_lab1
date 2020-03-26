@@ -32,4 +32,4 @@ Once you've completed your report markdown, and have committed all your changes 
 2. Click the _New pull request_ button.
 3. Choose the base fork _tangollama/cis411_lab0_ is the target and that your fully updated _master_ branch is the source.
 4. Enter a title and description for the Pull Request (PR), **referencing at least one other student in the content via their GitHub handle**, and submit the PR.
-5. Submit that URL to canvas as your lab report work.
+5. Submit that URL to canvas as your lab report work.
