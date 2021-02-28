@@ -21,7 +21,7 @@ Serve Central is a volunteer service aggregate platform that matches volunteers 
 | Use Case #1 | |
 |---|---|
 | Title | UC-1 Volunteer looking for work |
-| Description / Steps | 1. Volunteer creates an account with ServeCentral.\2. Volunteer navigates through list of events and chooses one.\3. Volunteer signs up for event. |
+| Description / Steps | 1. Volunteer creates an account with ServeCentral.\ 2. Volunteer navigates through list of events and chooses one.\ 3. Volunteer signs up for event. |
 | Primary Actor | Volunteer |
 | Preconditions | 1. The signup protocol is implemented and working.\2. The events database is up-to-date and can be viewed from the app.\3. The database is able to accept username and email after signing up for an event. |
 | Postconditions | 1. The user information is put into the database.\2. The service agency is notified of the new volunteer.\3. A confirmation email is sent to the user to remind them of the event. |
