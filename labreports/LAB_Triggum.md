@@ -24,7 +24,7 @@ Serve Central allows for a volunteer to find volunteering opportunities and appl
 
 | Description| The volunteer fills out the necessary information to apply and submits it. The system processess the request by forwarding it to the respective service agencies for approval
 
-Steps:|  
+Steps:  
 1. Applying to volunteer for an event
     1. The volunteer looks for an event they are interested in and applies for it.
     2. The system notifies the service agency of the application.
