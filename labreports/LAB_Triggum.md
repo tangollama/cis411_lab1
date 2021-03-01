@@ -30,7 +30,7 @@ Steps:
 1.0. Applying to volunteer for an event
     1. The volunteer looks for an event they are interested in and applies for it.
     2. The system notifies the service agency of the application.
-    3. The system stores the application in the pending application database|
+    3. The system stores the application in the pending application datastore|
    
 | Primary Actor |
 The volunteer|
@@ -38,7 +38,7 @@ The volunteer|
 | Preconditions | 
   1. The Volunteer has their identity authenticated.
   2. The event is open for application.
-  3. The pending application database is up-to-date and on-line|
+  3. The pending application datastore is up-to-date and on-line|
 | Postconditions |
   1. The request is approved or refused by the service agency
   2. The volunteer is notified of the approval decision.
@@ -55,7 +55,7 @@ Description: The service agencies creates an event to recruit volunteers by stat
 Steps: 
   1.0 Service agency creates an event
     1. The service agency specifies the event details and the reason for the event
-    2. The system stores the event in the organization database.
+    2. The system stores the event in the organization datastore.
     3. The system notifies users in the area that a new event is open.
     4. The system opens up the event for applicants.|
 
@@ -64,11 +64,11 @@ Steps:
 | Preconditions |
   1. The service agency's identity is authenticated.
   2. The service agency has a valid event being held.
-  3. The organization database is up-to-date and on-line.|
+  3. The organization datastore is up-to-date and on-line.|
    
 | Postconditions |
   1. The system notifies the service agency about the confirmation of the event.
-  2. The event is stored in the organization database.
+  2. The event is stored in the organization datastore.
   3. The volunteers are notified of a new event |
 
 ## Step 2.2 Define the MVC Components
@@ -82,19 +82,18 @@ Steps:
 
 ## Step 2.3 Diagram a Use Case in Architectural Terms
 * The process of a Volunteer applying for an event.
-![Use Case Diagram](../assets/use_case.PNG) 
+![Use Case Diagram](C:\Users\Bryan Chang\Documents\GitHub\cis411_lab2_arch\assets\use_case.PNG) 
 
 
 # Step 3: Enhancing an Architecture
 
 ## Step 3.1 Architecture Change Proposal
-INSERT Architectural change proposal here, and how it meets the two new requirements.  Explain both the benefits and draw backs of your proposal.
+The architectural pattern that would be appropriate is the peer-to-peer architectural pattern. This pattern meets the two new requirements as it allows for thirdparty services to input  and retrieve data from the Serve Central model/datastore because it allows for equal access to all its nodes. Besides that, it allows for Serve Central to provide its services onto different partner organzations. The benefits for using this structure is that it allows for limited redundancy when dealing with multiple organizations, quick access to necessary information, and integration with software like Stripe Elements which is an open-source checkout ui. The drawbacks from using this architectural pattern is that it requires attention to who uses it, confidentiality might be difficult if there are many peers in the network. Other than that, if a virus gets uploaded by accident, it would effect the other nodes as well which is a huge danger.
 
 ## Step 3.2 Revised Architecture Diagram
-INSERT IMAGE HERE with a Description.
+![Architecture](C:\Users\Bryan Chang\Documents\GitHub\cis411_lab2_arch\assets\Architecture diagram.PNG)
 
 # Step 4: Scaling an Architecture
-INSERT Architectural change proposal here, and how it meets the four new requirements.  Explain both the benefits and draw backs of your proposal.  If the changes are significant, then you need to explain why the changes are necessary versus a nice-to-have enhancement.
-
+The architectural change proposal would be to change to a broker architectural pattern. This allows for availability of service for a larger amount of people than the previous peer-to-peer service. Along with that, the broker would be able to handle data exceeding 50TBs and allow for authorized parties to query the data stored. This is significant because the previous architectural pattern would not be able to handle a load of more than 50TB and would end up crashing the network. The queries issued by authorized parties can also help researchers examine patterns. The benefits for using this architectural pattern is that it can be used to query data from datastores and allow for continued service as the broker has services it can provide along with being a bridge to the Serve Central servers. Disadvantages of a brokered architectural pattern is that it is relient on the broker to be stable and able to provide services reliably.
 # Extra Credit
 If you opt to do extra credit, then include it here.
