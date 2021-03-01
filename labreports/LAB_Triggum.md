@@ -51,7 +51,7 @@ Creating an event|
 Description: The service agencies creates an event to recruit volunteers by stating information about the event like the event title, which area of service its serving and location of the event
 
 Steps: 
-  1.0 Service agency creates an event
+  1. Service agency creates an event
     1. The service agency specifies the event details and the reason for the event
     2. The system stores the event in the organization datastore.
     3. The system notifies users in the area that a new event is open.
@@ -80,7 +80,7 @@ Steps:
 
 ## Step 2.3 Diagram a Use Case in Architectural Terms
 * The process of a Volunteer applying for an event.
-![Use Case Diagram](C:\Users\Bryan Chang\Documents\GitHub\cis411_lab2_arch\assets\use_case.PNG) 
+![Use Case Diagram](\assets\use_case.PNG) 
 
 
 # Step 3: Enhancing an Architecture
@@ -89,7 +89,7 @@ Steps:
 The architectural pattern that would be appropriate is the peer-to-peer architectural pattern. This pattern meets the two new requirements as it allows for thirdparty services to input  and retrieve data from the Serve Central model/datastore because it allows for equal access to all its nodes. Besides that, it allows for Serve Central to provide its services onto different partner organzations. The benefits for using this structure is that it allows for limited redundancy when dealing with multiple organizations, quick access to necessary information, and integration with software like Stripe Elements which is an open-source checkout ui. The drawbacks from using this architectural pattern is that it requires attention to who uses it, confidentiality might be difficult if there are many peers in the network. Other than that, if a virus gets uploaded by accident, it would effect the other nodes as well which is a huge danger.
 
 ## Step 3.2 Revised Architecture Diagram
-![Architecture](C:\Users\Bryan Chang\Documents\GitHub\cis411_lab2_arch\assets\Architecture diagram.PNG)
+![Architecture](\assets\Architecture diagram.PNG)
 
 # Step 4: Scaling an Architecture
 The architectural change proposal would be to change to a broker architectural pattern. This allows for availability of service for a larger amount of people than the previous peer-to-peer service. Along with that, the broker would be able to handle data exceeding 50TBs and allow for authorized parties to query the data stored. This is significant because the previous architectural pattern would not be able to handle a load of more than 50TB and would end up crashing the network. The queries issued by authorized parties can also help researchers examine patterns. The benefits for using this architectural pattern is that it can be used to query data from datastores and allow for continued service as the broker has services it can provide along with being a bridge to the Serve Central servers. Disadvantages of a brokered architectural pattern is that it is relient on the broker to be stable and able to provide services reliably.
