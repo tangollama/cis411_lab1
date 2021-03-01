@@ -5,7 +5,7 @@ ___
 **Name:** Your Name  
 **GitHub Handle:** Your GitHub Handle  
 **Repository:** Your Forked Repository  
-**Collaborators:** 
+**Collaborators:** Robbie Dorsey
 ___
 
 # Step 1: Confirm Lab Setup
@@ -44,20 +44,24 @@ Serve Central is a volunteer service aggregate platform that matches volunteers 
 | Volunteers for events (cross-referenced with Users) | Sign up for event | Logic re:users flagged as agencies able to see agency-related views |
 | MongoDB | Sign up for account |  |
 |  | Landing page |  |
+|  | Create event |  |
 
 ## Step 2.3 Diagram a Use Case in Architectural Terms
-INSERT IMAGE HERE with a Description.
+![MVC Use Case Diagram](../assets/mvcDiagram.png)
 
 # Step 3: Enhancing an Architecture
 
 ## Step 3.1 Architecture Change Proposal
-INSERT Architectural change proposal here, and how it meets the two new requirements.  Explain both the benefits and draw backs of your proposal.
+A total architectural overhaul seems unnecessary in this case. Stripe embedding and like services certainly do not warrant one and creating a way for third parties to interface with the database should not interfere with the current architecture in significant ways. Remaining in MVC arch primarily prevents unecessary work, by allowing the MVC arch to be preserved and keep code optimized. Unfortunately, organization-specific interfaces may be difficult to handle (multiple similar views).
 
 ## Step 3.2 Revised Architecture Diagram
-INSERT IMAGE HERE with a Description.
+![New Architectural Diragram](../assets/newArchDiagram.png)
 
 # Step 4: Scaling an Architecture
 INSERT Architectural change proposal here, and how it meets the four new requirements.  Explain both the benefits and draw backs of your proposal.  If the changes are significant, then you need to explain why the changes are necessary versus a nice-to-have enhancement.
 
+As Serve Central expands and grows, and in accordance with the proposed changes, I recommend a Blackboard architecture. The reason I propose moving away from MVC is simply that it will not handle the data and queries quite as well. Blackboard architecture does well with large amounts of data, and does not suffer the speed drawbacks that other architechtures do (because of the brokered arch). As new queries and data come in, so long as the underlying event/user data models do not change, speed and data quality should not suffer. Unfortunately, being a change from MVC, shifting to Blackboard may cause a few headaches, but it should be very doable. 
+
 # Extra Credit
-If you opt to do extra credit, then include it here.
+I'm not sure if you're still accepting typos as extra credit, but in the ServeCentral PDF, on page 6: "User can create and account."
+Otherwise, I noticed that in Slack some classmates were confused about the requirements of step 2.2. I think an easy fix to this might be to only require 3 of each and fill the first row with an example.
