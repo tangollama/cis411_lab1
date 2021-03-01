@@ -5,7 +5,7 @@ ___
 **Name:** Bryan Chang  
 **GitHub Handle:** Triggum  
 **Repository:** cis411_lab2_arch  
-**Collaborators:** 
+**Collaborators:** Jmtonnies
 ___
 
 # Step 1: Confirm Lab Setup
