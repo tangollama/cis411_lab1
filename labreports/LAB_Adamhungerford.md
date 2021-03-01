@@ -64,4 +64,5 @@ As Serve Central expands and grows, and in accordance with the proposed changes,
 
 # Extra Credit
 I'm not sure if you're still accepting typos as extra credit, but in the ServeCentral PDF, on page 6: "User can create and account."
+
 Otherwise, I noticed that in Slack some classmates were confused about the requirements of step 2.2. I think an easy fix to this might be to only require 3 of each and fill the first row with an example.
