@@ -20,46 +20,46 @@ Serve Central allows for a volunteer to find volunteering opportunities and appl
 
 | Use Case #1 |ID:UC-1|
 |---|---|
-| Title | Applying to volunteer|
+| Title | Applying to volunteer |
 
-| Description |Description: The volunteer fills out the necessary information to apply and submits it. The system processess the request by forwarding it to the respective service agencies for approval|
+| Description | The volunteer fills out the necessary information to apply and submits it. The system processess the request by forwarding it to the respective service agencies for approval |
 
-| Steps |1.0. Applying to volunteer for an event
+| Steps | 1.0. Applying to volunteer for an event
     1. The volunteer looks for an event they are interested in and applies for it.
     2. The system notifies the service agency of the application.
-    3. The system stores the application in the pending application datastore|
+    3. The system stores the application in the pending application datastore |
    
-| Primary Actor |The volunteer|
+| Primary Actor | The volunteer |
 
 | Preconditions | 1. The Volunteer has their identity authenticated.
   2. The event is open for application.
-  3. The pending application datastore is up-to-date and on-line|
+  3. The pending application datastore is up-to-date and on-line |
 
-| Postconditions |1. The request is approved or refused by the service agency
+| Postconditions | 1. The request is approved or refused by the service agency
   2. The volunteer is notified of the approval decision.
     2.1. If approved, event details are given. |
 
 | Use Case #2 |ID: UC-2 |
 |---|---|
-| Title |Creating an event|
+| Title | Creating an event |
 
-| Description | The service agencies creates an event to recruit volunteers by stating information about the event like the event title, which area of service its serving and location of the event
+| Description | The service agencies creates an event to recruit volunteers by stating information about the event like the event title, which area of service its serving and location of the event |
 
-|Steps | 1.0 Service agency creates an event
+| Steps | 1.0 Service agency creates an event
     1. The service agency specifies the event details and the reason for the event
     2. The system stores the event in the organization datastore.
     3. The system notifies users in the area that a new event is open.
-    4. The system opens up the event for applicants.|
+    4. The system opens up the event for applicants. |
  
 
-| Primary Actor |Service Agencies|
+| Primary Actor | Service Agencies |
 
-| Preconditions |1. The service agency's identity is authenticated.
+| Preconditions | 1. The service agency's identity is authenticated.
   2. The service agency has a valid event being held.
-  3. The organization datastore is up-to-date and on-line.|
+  3. The organization datastore is up-to-date and on-line. |
   
    
-| Postconditions |1. The system notifies the service agency about the confirmation of the event.
+| Postconditions | 1. The system notifies the service agency about the confirmation of the event.
   2. The event is stored in the organization datastore.
   3. The volunteers are notified of a new event |
   
