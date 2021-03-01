@@ -11,7 +11,7 @@ ___
 # Step 1: Confirm Lab Setup
 - [done] I have forked the repository and created my lab report
 - [done] I have reviewed the [lecture / discsussion](../assets/04p1_SolutionArchitectures.pdf) on architecture patterns.
-- [] If I'm collaborating on this project, I have included their handles on the report and confirm that my report is informed, but not copied from my collaborators.
+- [done] If I'm collaborating on this project, I have included their handles on the report and confirm that my report is informed, but not copied from my collaborators.
 
 # Step 2: Analyze the Proposal
 Serve Central allows for a volunteer to find volunteering opportunities and apply for them. The user can see the event, service agency information and apply conveniently in one app.
