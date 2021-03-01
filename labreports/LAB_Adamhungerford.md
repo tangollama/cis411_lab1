@@ -29,7 +29,7 @@ Serve Central is a volunteer service aggregate platform that matches volunteers 
 | Use Case #2 | |
 |---|---|
 | Title | UC-2 Service agency looking for volunteers |
-| Description / Steps | 1. Service agency creates an event on Serve Central.\2. The event is published to the site and is visible for signup.|
+| Description / Steps | 1. Service agency creates an event on Serve Central.</br>2. The event is published to the site and is visible for signup.|
 | Primary Actor | Service agent |
 | Preconditions | 1. Users flagged as service agencies are able to access event creation.\2. Database is able to accept new events. |
 | Postconditions | 1. Service agency sent a comfirmation email.\2. Volunteers are able to sign up for the event. |
