@@ -14,34 +14,34 @@ ___
 - [x] If I'm collaborating on this project, I have included their handles on the report and confirm that my report is informed, but not copied from my collaborators.
 
 # Step 2: Analyze the Proposal
-Serve Central ... ENTER A BASIC SYSTEM INTRODUCTION HERE (1-2 Sentences).
+**Serve Central**: A user friendly application that allows users to find volunteering opportunities nearby with ease. Serve Central also allows for all of the documents to be filled out all in one spot, creating less of a headache for the user.
 
 ## Step 2.1 Representative Use Cases  
 
 | Use Case #1 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| **Title** |**Volunteer Information**|
+| **Description/Steps** |1. The volunteer will search through volunteering opportunities that are displayed on a map in their location. 2. The user will see the distance, location, time, number of attendees, and the type of event it is. 3. The user will the event that they would like to be a part of. 4. The user must fill out any necessary information the events need from volunteers. 5. Once the user has filled out the required information the organizers of the event will determine if the application should be accepted for the volunteer position. 6. The people organizing the volunteer event will notify any person who was accepted as a volunteer.|
+| **Primary Actor** |Person using the Application ServeCentral|
+| **Preconditions** | 1. The user must create an account using their email and password of their choosing. 2. The user shall verify their account by having an email sent to them. 3. The user must be logged in before proceeding with the app.|
+| **Postconditions** | 1. Users will be notified that their application for the volunteering event has been sent. 2. Users will be notified on whether their application has been accepted.|
 
 | Use Case #2 | |
 |---|---|
-| Title | |
-| Description / Steps | |
-| Primary Actor | |
-| Preconditions | |
-| Postconditions | |
+| **Title** |**Event Information**|
+| **Description/Steps** | 1. An employee will make a post about an available volunteering opportunity with the address, expected number of attendees, name of the event, and the type of the event it is. 2. An employee will post the event. 3. The employee will receive applications sent from users interested in their event. 4. Employee will notify users that the application has been received. 5. Employee will notify if the users are qualified based of the requirements within the organization. 6. The Employee will notify users if any changes has been made to the events.|
+| **Primary Actor(s)** | Employees of ServeCentral and Organizers of Events Submitting Information|
+| **Preconditions** | 1. Have plannars of events submit information to ServeCentral to post. 2. Have an employee post the necessary information to their application. |
+| **Postconditions** | 1. Notify users if they are selected for the volunteer spot. 2. Change or Update any information necessary for the volunteer events. |
 
 ## Step 2.2 Define the MVC Components
 
 | Model | View | Controller |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Oracle MySQL | React Native | UML |
+| MongoDB | Ionic Framework | KOA |
+| PostgreSQL | AngularJS | FMC |
+| Redis | Bootstrap | EXPRESS |
 
 ## Step 2.3 Diagram a Use Case in Architectural Terms
 INSERT IMAGE HERE with a Description.
