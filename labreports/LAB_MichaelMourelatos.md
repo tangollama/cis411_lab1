@@ -59,24 +59,47 @@ ___
 
 | Model | View | Controller |
 |---|---|---|
-| Service Events Opportunities | Possible Events | EventPostingController |
-| Volunteer Registration | Sign Up | RegistrationController |
+| Service Event Opportunities | Possible Events | EventPostingController |
+| Volunteer Registration | Account Sign Up | RegistrationController |
 | Type of Event | Event Registration Information | EventDataController |
-| Organization | Organization Information Display | LoginController |
+| Organization Information | Organization Data Display | LoginController |
 
 ## Step 2.3 Diagram a Use Case in Architectural Terms
-INSERT IMAGE HERE with a Description.
+![Use Case Diagram](/assets/Use_Case_Diagram_2_13.png) 
+
+**Description**: The user seeking out volunteering opportunities will go to the ServeCentral application to find an event they want to volunteer for. The user will make an account and log on to ServeCentral. Once completed, a message will be delivered to the controller. The database, through connection with the controller, provides the updates needed to the database. Finally, the controller allows the user to see the account is created, and the user can search through volunteering opportunities.
 
 # Step 3: Enhancing an Architecture
 
 ## Step 3.1 Architecture Change Proposal
-INSERT Architectural change proposal here, and how it meets the two new requirements.  Explain both the benefits and draw backs of your proposal.
+With ServeCentral expecting to receive tremendous growth and desire to extend their service and provide for primary volunteer entities in the United States, I believe it is wise for ServeCentral to use a Microservices architecture.
+
+MVC architectures are sufficient with their maintenance, team integration, and building software. However, wanting to expand throughout the country requires more involvement from third-party services. Microservices utilizes multiple databases for their architecture which allows users to easily work with the framework and third-party services wanting to implement anything. Using multiple databases welcomes the possibility of adding or removing things from ServeCentral (or whatever app is in use).
+
+To expand at an efficient rate with third-party contributions, this is where Microservices beats MVC. This is what satisfies the second requirement. Using multiple databases in the framework allows for "organization-specific" interfaces. MVC allows for easy team collaboration, but it is more difficult to add new interfaces. Having multiple databases in Microservices may bring a slower approach to implementing new interfaces, but it is easy to implement.
+
+The downside to using Microservices would be the challenge of overcoming the transition from an MVC architecture to a Microservices architecture. Although this may be a hassle to take on, it will be beneficial in the long run.
+
 
 ## Step 3.2 Revised Architecture Diagram
-INSERT IMAGE HERE with a Description.
+![Microsystems Diagram](/assets/New_Microservices_Diagram_2_13.png)
+
+**Description**: 
 
 # Step 4: Scaling an Architecture
-INSERT Architectural change proposal here, and how it meets the four new requirements.  Explain both the benefits and draw backs of your proposal.  If the changes are significant, then you need to explain why the changes are necessary versus a nice-to-have enhancement.
+The architectural pattern to employ would continue to be the Microsystems architecture.
+
+Microsystems find their identity in utilizing multiple databases for different areas of their framework. This welcomes efficiency due to the framework allowing various jobs to be split up for the database needed.
+
+To combat bursts of over 10k+ new volunteer opportunities per hour, ServeCentral would need to implement more databases. Implementing more databases that target more specific information will allow the system to process quicker.
+
+To support a volunteer and event data store that will exceed 50TB of data is similar to the latency concern. Implementing more databases and having multiple databases allows jobs to be divided and data to be dispersed.
+
+When allowing authorized parties to issue queries, they will only have access to the necessary databases to move forward. These Third-Party Services or Organization Specific Interfaces don't need access to things such as "Login Information." However, they can be allowed access to the users that have signed up for which specific events.
+
+Enabling researchers to examine patterns of volunteer opportunities can be done through giving researchers "Read-Only Access." This allows these researchers to view the data but not make any changes. This ensures the safety of the information.
+
+Any drawbacks that occur within a Microsystems architecture would be the complexity of the multiple databases. Multiple databases are entered into Microsystems. Assembling this architecture poorly will lead to a challenging system to work with. However, this drawback only occurs when the databases are made with little care. Having a programmer that can construct good databases is a top priority in Microsystems.
 
 # Extra Credit
 If you opt to do extra credit, then include it here.
