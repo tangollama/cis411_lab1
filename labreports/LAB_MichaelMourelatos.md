@@ -65,7 +65,7 @@ ___
 | Organization Information | Organization Data Display | LoginController |
 
 ## Step 2.3 Diagram a Use Case in Architectural Terms
-![Use Case Diagram](/assets/Use_Case_Diagram_2_13.png) 
+![Use Case Diagram](/assets/Use_Case_Diagram_2_13.jpg) 
 
 **Description**: The user seeking out volunteering opportunities will go to the ServeCentral application to find an event they want to volunteer for. The user will make an account and log on to ServeCentral. Once completed, a message will be delivered to the controller. The database, through connection with the controller, provides the updates needed to the database. Finally, the controller allows the user to see the account is created, and the user can search through volunteering opportunities.
 
@@ -82,9 +82,9 @@ The downside to using Microservices would be the challenge of overcoming the tra
 
 
 ## Step 3.2 Revised Architecture Diagram
-![Microsystems Diagram](/assets/New_Microservices_Diagram_2_13.png)
+![Microsystems Diagram](/assets/Microservices_Diagram_2_13.jpg)
 
-**Description**: 
+**Description**: In this Microsystems diagram, there are three different categories: Users, Display, and Databases. The user will either be on the website of ServeCentral or the mobile option. They can access various displays of ServeCentral by going through the various databases. There are also third-party services and organization specific services taht can accesss certain databases. They are capable of implementing additional databases.
 
 # Step 4: Scaling an Architecture
 The architectural pattern to employ would continue to be the Microsystems architecture.
@@ -102,4 +102,8 @@ Enabling researchers to examine patterns of volunteer opportunities can be done 
 Any drawbacks that occur within a Microsystems architecture would be the complexity of the multiple databases. Multiple databases are entered into Microsystems. Assembling this architecture poorly will lead to a challenging system to work with. However, this drawback only occurs when the databases are made with little care. Having a programmer that can construct good databases is a top priority in Microsystems.
 
 # Extra Credit
-If you opt to do extra credit, then include it here.
+![Extra Credit Microsystems Diagram](/assets/Extra_Credit_Diagram_2_13.jpg)
+
+**Description**: In this diagram, "Authorized Parties" and "Research" was added. Authorized parties is essentially the back-end programmers. These authorized users need to have access to the databases to continue to implement any changes or add anything. The research addition was to prioritize adding any new information to the ServeCentral webite/application. This addition only needs access to the "Organization Information" database since the researchers will be providing any information needed for the site/application.
+
+**Meaningful Changes to the Assignment**: A change that I would implement would be more clarifying and in-depth instructions for the MVC framwork. When going through making the MVC framework it was unclear whether or not we should suggest software to use or state how the MVC framework is implemented into the ServeCentral application. So, having more clear instructions would have allowed a more direct approach instead of researching various databases, views, and controllers to use.
