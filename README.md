@@ -22,7 +22,7 @@ In this lab, you are going to review a proposed architecture for an application 
 
 Fortunately, the team has done a fantastic job, so you will be asked to reassess your designs for two different business opportunities.
 
-Detailed instructions are [here](labreports/LAB_INSTRUCTIONS.md), and you are expected to compile your findings into a labreport following this [template](labreports/LAB_TEMPLATE.md).
+Detailed instructions are [here](LAB_INSTRUCTIONS.md), and you are expected to compile your findings into a labreport following this [template](labreports/LAB_TEMPLATE.md).
 
 ## 3. Submissions
 You are expected to create a lab report as a markdown file under the labreports directory using the **LAB_[GITHUB Handle].md** naming convention in your forked repository.  After you have reviewed your work, then you should submit a `Pull Request` to this repository with your lab report and any accompanying images/files (e.g., required diagrams).  Add the `Pull Request` URL into the courseroom LMS (Canvas) for grading.
@@ -33,6 +33,7 @@ Lab Specific Help (since this may be your first GitHub experience or writing req
 - [Lab template](labreports/LAB_Template.md)
 - [Serve Central Proposal](assets/ServeCentral.pdf)
 - [Architecture Lecture Slides](assets/04p1_SolutionArchitectures.pdf)
+- [Sample Use Case](assets/UseCase_Sample.md)
 
 Understanding Markdown Syntax
 - [Markdown Guide](https://www.markdownguide.org/)

@@ -30,10 +30,13 @@ Summarize Serve Central in 1-2 sentences for those who have not been able to rev
 ## Step 2.1 Document Use Cases
 Consider the target audiences for Serve Central (volunteers and service agencies), define one use case for each of those audiences.
 
-Dennis, Wixom and Roth (2014) have a full chapter (4) on writing use cases.  You are welcome to use an alternative format (there are plenty of alternative templates out there), but please ensure that you include the following elements: Title, Description / Steps, Primary Actor, Preconditions, & Postconditions
+Dennis, Wixom and Roth (2014) have a full chapter (4) on writing use cases.  You are welcome to use an alternative format (there are plenty of alternative templates out there), but please ensure that you include the following elements: Title, Description / Steps, Primary Actor, Preconditions, & Postconditions.  A sample is included in the [assets folder](assets/UseCase_Sample.md).   
 
-## Step 2.2 Define the MVC Components
-Build a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project.
+## Step 2.2 Define the MVC Components  
+Build a [table](https://www.tablesgenerator.com/markdown_tables) of at least **four models, views, and controllers** needed to produce this project based on the business requirements you do not need to research any technology solutions for this steps.  Here's a hint:  
+- Models typically reflect your data entities
+- Views typically mirror your pages or screens
+- Controllers govern system performed actions
 
 ## Step 2.3 Diagram a Use Case in Architectural Terms
 Generate and [embed](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) at least one diagram of the interaction between an Actor from the Use Cases, and one set of Model(s), View(s), and Controller(s) from the proposed architecture, including all the related / necessary services (ex: data storage and retrieval, web servers, container tech, etc.)
